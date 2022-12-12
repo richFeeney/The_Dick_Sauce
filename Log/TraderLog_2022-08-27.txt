@@ -1,0 +1,13 @@
+2022-08-27 18:23:09.225603-04:00: Try brokerClient IBinsync port=7496
+2022-08-27 18:23:09.270565-04:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-08-27 18:23:09.271529-04:00: Connected to IB is successful using port=7496
+2022-08-27 18:23:09.273524-04:00: ##    ACCOUNT Balance  DU2883069  ##
+2022-08-27 18:23:09.303444-04:00: CASH=531321.0
+2022-08-27 18:23:09.304441-04:00: portfolio_value=587710.0
+2022-08-27 18:23:09.304441-04:00: positions_value=55727.0
+2022-08-27 18:23:09.423124-04:00: ##    POSITIONS DU2883069   ##
+2022-08-27 18:23:09.424122-04:00: Symbol Amount Cost_basis
+2022-08-27 18:23:09.425119-04:00: STK,,,AAPL,USD 343 145.685
+2022-08-27 18:23:09.426116-04:00: ##    NO any order    ##
+2022-08-27 18:23:13.259910-04:00: broker_client_factory.CallBacks:errorId=72571 errorCode=162 errorMessage=Historical Market Data Service error message:No market data permissions for AMEX STK. Requested market data requires additional subscription for API. See link in 'Market Data Connections' dialog for more details.
+2022-08-27 18:23:13.260916-04:00: broker_client_factory.CallBacks::_print_version:IBridgePy version= 18.1.7

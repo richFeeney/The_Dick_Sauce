@@ -1,0 +1,33 @@
+2022-09-30 12:27:55.011969-04:00: Try brokerClient IBinsync port=7496
+2022-09-30 12:27:55.054702-04:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-09-30 12:27:55.055705-04:00: Connected to IB is successful using port=7496
+2022-09-30 12:27:55.057704-04:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-09-30 12:27:55.086617-04:00: CASH=313466.85
+2022-09-30 12:27:55.086617-04:00: portfolio_value=313942.98
+2022-09-30 12:27:55.087647-04:00: positions_value=0.0
+2022-09-30 12:27:55.089609-04:00: ##    NO ANY POSITION    ##
+2022-09-30 12:27:55.090606-04:00: ##    NO any order    ##
+2022-09-30 13:08:34.866696-04:00: Try brokerClient IBinsync port=7496
+2022-09-30 13:08:34.880114-04:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-09-30 13:08:34.880114-04:00: Connected to IB is successful using port=7496
+2022-09-30 13:08:34.881109-04:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-09-30 13:09:04.881240-04:00: broker_client_factory.BrokerClient::request_data: EXIT, the following requestRecord failed
+2022-09-30 13:09:04.881240-04:00: {reqId=0,status=Submitted,reqType=reqAccountUpdates,followUp=True,waitForFeedbackInSeconds=30,param={subscribe:True,accountCode:DU2628075,}}
+2022-09-30 13:22:15.022597-04:00: Try brokerClient IBinsync port=7496
+2022-09-30 13:22:15.034029-04:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-09-30 13:22:15.037022-04:00: Connected to IB is successful using port=7496
+2022-09-30 13:22:15.041011-04:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-09-30 13:22:15.053977-04:00: CASH=313466.85
+2022-09-30 13:22:15.054975-04:00: portfolio_value=313942.98
+2022-09-30 13:22:15.054975-04:00: positions_value=0.0
+2022-09-30 13:22:15.055971-04:00: ##    NO ANY POSITION    ##
+2022-09-30 13:22:15.056969-04:00: ##    NO any order    ##
+2022-09-30 15:23:18.706191-04:00: Try brokerClient IBinsync port=7496
+2022-09-30 15:23:18.720567-04:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-09-30 15:23:18.723587-04:00: Connected to IB is successful using port=7496
+2022-09-30 15:23:18.727547-04:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-09-30 15:23:18.737522-04:00: CASH=313466.85
+2022-09-30 15:23:18.738547-04:00: portfolio_value=313942.98
+2022-09-30 15:23:18.738547-04:00: positions_value=0.0
+2022-09-30 15:23:18.739545-04:00: ##    NO ANY POSITION    ##
+2022-09-30 15:23:18.740551-04:00: ##    NO any order    ##

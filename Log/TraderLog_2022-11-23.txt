@@ -1,0 +1,91 @@
+2022-11-23 06:49:50.897688-05:00: Try brokerClient IB port=7496
+2022-11-23 06:49:51.026250-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-11-23 06:49:51.040214-05:00: Connected to IB is successful using port=7496
+2022-11-23 06:49:51.081076-05:00: IBridgePy version 18.1.7
+2022-11-23 06:49:51.096036-05:00: fileName = UpdatedAlgoCommon.py
+2022-11-23 06:49:52.871845-05:00: ####    Starting to initialize trader    ####
+2022-11-23 06:49:52.886126-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-11-23 06:49:52.901090-05:00: CASH=299301.86
+2022-11-23 06:49:52.915553-05:00: portfolio_value=299906.67
+2022-11-23 06:49:52.929251-05:00: positions_value=0.0
+2022-11-23 06:49:52.943601-05:00: ##    NO ANY POSITION    ##
+2022-11-23 06:49:52.958014-05:00: ##    NO any order    ##
+2022-11-23 06:49:52.970697-05:00: ####    Initialize trader COMPLETED    ####
+2022-11-23 10:12:07.268522-05:00: ModifyOrder ibpyOrderId=ib44198 security={STK,,SMART,SPY,USD} order={account=DU2628075 action=SELL orderType=LMT amount=224 tif=DAY orderRef= limitPrice=401.56}
+2022-11-23 11:42:19.468115-05:00: ModifyOrder ibpyOrderId=ib44751 security={STK,,SMART,SPY,USD} order={account=DU2628075 action=BUY orderType=LMT amount=224 tif=DAY orderRef= limitPrice=401.92}
+2022-11-23 12:16:28.277772-05:00: ModifyOrder ibpyOrderId=ib44970 security={STK,,SMART,SPY,USD} order={account=DU2628075 action=BUY orderType=LMT amount=225 tif=DAY orderRef= limitPrice=400.7}
+2022-11-23 12:25:07.482630-05:00: ModifyOrder ibpyOrderId=ib45027 security={STK,,SMART,SPY,USD} order={account=DU2628075 action=BUY orderType=LMT amount=225 tif=DAY orderRef= limitPrice=400.82}
+2022-11-23 12:25:12.492403-05:00: ModifyOrder ibpyOrderId=ib45027 security={STK,,SMART,SPY,USD} order={account=DU2628075 action=BUY orderType=LMT amount=225 tif=DAY orderRef= limitPrice=400.84}
+2022-11-23 12:25:17.436778-05:00: ModifyOrder ibpyOrderId=ib45027 security={STK,,SMART,SPY,USD} order={account=DU2628075 action=BUY orderType=LMT amount=225 tif=DAY orderRef= limitPrice=400.86}
+2022-11-23 12:46:46.634446-05:00: ModifyOrder ibpyOrderId=ib45176 security={STK,,SMART,SPY,USD} order={account=DU2628075 action=BUY orderType=LMT amount=225 tif=DAY orderRef= limitPrice=400.57}
+2022-11-23 13:15:30.404236-05:00: ModifyOrder ibpyOrderId=ib45363 security={STK,,SMART,SPY,USD} order={account=DU2628075 action=BUY orderType=LMT amount=225 tif=DAY orderRef= limitPrice=400.0}
+2022-11-23 13:15:35.678515-05:00: ModifyOrder ibpyOrderId=ib45363 security={STK,,SMART,SPY,USD} order={account=DU2628075 action=BUY orderType=LMT amount=225 tif=DAY orderRef= limitPrice=400.03}
+2022-11-23 13:15:40.942923-05:00: ModifyOrder ibpyOrderId=ib45363 security={STK,,SMART,SPY,USD} order={account=DU2628075 action=BUY orderType=LMT amount=225 tif=DAY orderRef= limitPrice=400.08}
+2022-11-23 14:11:22.392797-05:00: ModifyOrder ibpyOrderId=ib45696 security={STK,,SMART,SPY,USD} order={account=DU2628075 action=SELL orderType=LMT amount=224 tif=DAY orderRef= limitPrice=401.5}
+2022-11-23 14:19:47.248457-05:00: ModifyOrder ibpyOrderId=ib45753 security={STK,,SMART,SPY,USD} order={account=DU2628075 action=SELL orderType=LMT amount=224 tif=DAY orderRef= limitPrice=401.7}
+2022-11-23 14:21:12.192853-05:00: ModifyOrder ibpyOrderId=ib45770 security={STK,,SMART,SPY,USD} order={account=DU2628075 action=SELL orderType=LMT amount=224 tif=DAY orderRef= limitPrice=401.8}
+2022-11-23 15:57:52.939470-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-11-23 15:57:52.991303-05:00: CASH=299272.99
+2022-11-23 15:57:53.004297-05:00: portfolio_value=299877.8
+2022-11-23 15:57:53.011278-05:00: positions_value=0.0
+2022-11-23 15:57:53.016262-05:00: ##    NO ANY POSITION    ##
+2022-11-23 15:57:53.022249-05:00: ##    Order Status DU2628075   ##
+2022-11-23 15:57:53.028233-05:00: {ibpyOrderId=ib44108 status=Filled order={account=DU2628075 action=BUY orderType=LMT amount=224 tif=DAY orderRef= limitPrice=401.41} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.034216-05:00: {ibpyOrderId=ib44112 status=Filled order={account=DU2628075 action=SELL orderType=LMT amount=224 tif=DAY orderRef= limitPrice=401.26} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.048181-05:00: {ibpyOrderId=ib44126 status=Filled order={account=DU2628075 action=BUY orderType=LMT amount=224 tif=DAY orderRef= limitPrice=401.37} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.061144-05:00: {ibpyOrderId=ib44168 status=Filled order={account=DU2628075 action=SELL orderType=LMT amount=224 tif=DAY orderRef= limitPrice=401.56} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.075079-05:00: {ibpyOrderId=ib44170 status=Filled order={account=DU2628075 action=BUY orderType=LMT amount=224 tif=DAY orderRef= limitPrice=401.62} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.089071-05:00: {ibpyOrderId=ib44184 status=Filled order={account=DU2628075 action=SELL orderType=LMT amount=224 tif=DAY orderRef= limitPrice=401.63} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.120984-05:00: {ibpyOrderId=ib44186 status=Filled order={account=DU2628075 action=BUY orderType=LMT amount=224 tif=DAY orderRef= limitPrice=401.74} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.134946-05:00: {ibpyOrderId=ib44190 status=Filled order={account=DU2628075 action=SELL orderType=LMT amount=224 tif=DAY orderRef= limitPrice=401.64} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.149908-05:00: {ibpyOrderId=ib44194 status=Filled order={account=DU2628075 action=BUY orderType=LMT amount=224 tif=DAY orderRef= limitPrice=401.67} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.163871-05:00: {ibpyOrderId=ib44198 status=Filled order={account=DU2628075 action=SELL orderType=LMT amount=224 tif=DAY orderRef= limitPrice=401.56} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.178830-05:00: {ibpyOrderId=ib44203 status=Filled order={account=DU2628075 action=BUY orderType=LMT amount=224 tif=DAY orderRef= limitPrice=401.67} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.190797-05:00: {ibpyOrderId=ib44217 status=Filled order={account=DU2628075 action=SELL orderType=LMT amount=224 tif=DAY orderRef= limitPrice=401.67} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.204760-05:00: {ibpyOrderId=ib44219 status=Filled order={account=DU2628075 action=BUY orderType=LMT amount=224 tif=DAY orderRef= limitPrice=401.7} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.219720-05:00: {ibpyOrderId=ib44221 status=Filled order={account=DU2628075 action=SELL orderType=LMT amount=224 tif=DAY orderRef= limitPrice=401.68} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.233691-05:00: {ibpyOrderId=ib44709 status=Filled order={account=DU2628075 action=SELL orderType=LMT amount=224 tif=DAY orderRef= limitPrice=401.89} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.246648-05:00: {ibpyOrderId=ib44751 status=Filled order={account=DU2628075 action=BUY orderType=LMT amount=224 tif=DAY orderRef= limitPrice=401.92} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.261608-05:00: {ibpyOrderId=ib44768 status=Filled order={account=DU2628075 action=SELL orderType=LMT amount=224 tif=DAY orderRef= limitPrice=401.82} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.274546-05:00: {ibpyOrderId=ib44900 status=Filled order={account=DU2628075 action=BUY orderType=LMT amount=224 tif=DAY orderRef= limitPrice=400.57} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.289533-05:00: {ibpyOrderId=ib44960 status=Filled order={account=DU2628075 action=SELL orderType=LMT amount=225 tif=DAY orderRef= limitPrice=400.65} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.303493-05:00: {ibpyOrderId=ib44964 status=Filled order={account=DU2628075 action=BUY orderType=LMT amount=225 tif=DAY orderRef= limitPrice=400.68} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.309479-05:00: {ibpyOrderId=ib44966 status=Filled order={account=DU2628075 action=SELL orderType=LMT amount=225 tif=DAY orderRef= limitPrice=400.64} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.314466-05:00: {ibpyOrderId=ib44970 status=Filled order={account=DU2628075 action=BUY orderType=LMT amount=225 tif=DAY orderRef= limitPrice=400.7} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.328430-05:00: {ibpyOrderId=ib45023 status=Filled order={account=DU2628075 action=SELL orderType=LMT amount=225 tif=DAY orderRef= limitPrice=400.74} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.342392-05:00: {ibpyOrderId=ib45027 status=Filled order={account=DU2628075 action=BUY orderType=LMT amount=225 tif=DAY orderRef= limitPrice=400.86} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.356354-05:00: {ibpyOrderId=ib45058 status=Filled order={account=DU2628075 action=SELL orderType=LMT amount=225 tif=DAY orderRef= limitPrice=400.77} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.371314-05:00: {ibpyOrderId=ib45064 status=Filled order={account=DU2628075 action=BUY orderType=LMT amount=225 tif=DAY orderRef= limitPrice=400.83} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.385277-05:00: {ibpyOrderId=ib45072 status=Filled order={account=DU2628075 action=SELL orderType=LMT amount=225 tif=DAY orderRef= limitPrice=400.79} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.400237-05:00: {ibpyOrderId=ib45080 status=Filled order={account=DU2628075 action=BUY orderType=LMT amount=225 tif=DAY orderRef= limitPrice=400.81} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.412205-05:00: {ibpyOrderId=ib45098 status=Filled order={account=DU2628075 action=SELL orderType=LMT amount=225 tif=DAY orderRef= limitPrice=400.78} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.426167-05:00: {ibpyOrderId=ib45126 status=Filled order={account=DU2628075 action=BUY orderType=LMT amount=225 tif=DAY orderRef= limitPrice=400.75} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.441100-05:00: {ibpyOrderId=ib45148 status=Filled order={account=DU2628075 action=SELL orderType=LMT amount=225 tif=DAY orderRef= limitPrice=400.38} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.455090-05:00: {ibpyOrderId=ib45176 status=Filled order={account=DU2628075 action=BUY orderType=LMT amount=225 tif=DAY orderRef= limitPrice=400.57} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.468057-05:00: {ibpyOrderId=ib45221 status=Filled order={account=DU2628075 action=SELL orderType=LMT amount=225 tif=DAY orderRef= limitPrice=399.82} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.483016-05:00: {ibpyOrderId=ib45273 status=Filled order={account=DU2628075 action=BUY orderType=LMT amount=225 tif=DAY orderRef= limitPrice=399.92} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.495981-05:00: {ibpyOrderId=ib45323 status=Filled order={account=DU2628075 action=SELL orderType=LMT amount=225 tif=DAY orderRef= limitPrice=399.99} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.510942-05:00: {ibpyOrderId=ib45331 status=Filled order={account=DU2628075 action=BUY orderType=LMT amount=225 tif=DAY orderRef= limitPrice=400.06} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.523878-05:00: {ibpyOrderId=ib45343 status=Filled order={account=DU2628075 action=SELL orderType=LMT amount=225 tif=DAY orderRef= limitPrice=399.93} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.555491-05:00: {ibpyOrderId=ib45349 status=Filled order={account=DU2628075 action=BUY orderType=LMT amount=225 tif=DAY orderRef= limitPrice=400.03} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.569511-05:00: {ibpyOrderId=ib45359 status=Filled order={account=DU2628075 action=SELL orderType=LMT amount=225 tif=DAY orderRef= limitPrice=399.9} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.583151-05:00: {ibpyOrderId=ib45363 status=Filled order={account=DU2628075 action=BUY orderType=LMT amount=225 tif=DAY orderRef= limitPrice=400.08} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.589590-05:00: {ibpyOrderId=ib45642 status=Filled order={account=DU2628075 action=BUY orderType=LMT amount=224 tif=DAY orderRef= limitPrice=401.51} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.595751-05:00: {ibpyOrderId=ib45696 status=Filled order={account=DU2628075 action=SELL orderType=LMT amount=224 tif=DAY orderRef= limitPrice=401.5} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.601106-05:00: {ibpyOrderId=ib45719 status=Filled order={account=DU2628075 action=BUY orderType=LMT amount=224 tif=DAY orderRef= limitPrice=401.94} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.621304-05:00: {ibpyOrderId=ib45753 status=Filled order={account=DU2628075 action=SELL orderType=LMT amount=224 tif=DAY orderRef= limitPrice=401.7} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.635139-05:00: {ibpyOrderId=ib45758 status=Filled order={account=DU2628075 action=BUY orderType=LMT amount=224 tif=DAY orderRef= limitPrice=401.89} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.650591-05:00: {ibpyOrderId=ib45760 status=Filled order={account=DU2628075 action=SELL orderType=LMT amount=224 tif=DAY orderRef= limitPrice=401.84} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.664462-05:00: {ibpyOrderId=ib45762 status=Filled order={account=DU2628075 action=BUY orderType=LMT amount=224 tif=DAY orderRef= limitPrice=401.89} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.677432-05:00: {ibpyOrderId=ib45770 status=Filled order={account=DU2628075 action=SELL orderType=LMT amount=224 tif=DAY orderRef= limitPrice=401.8} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.692436-05:00: {ibpyOrderId=ib45775 status=Filled order={account=DU2628075 action=BUY orderType=LMT amount=224 tif=DAY orderRef= limitPrice=401.87} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.708444-05:00: {ibpyOrderId=ib45777 status=Filled order={account=DU2628075 action=SELL orderType=LMT amount=224 tif=DAY orderRef= limitPrice=401.82} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.722450-05:00: {ibpyOrderId=ib45779 status=Filled order={account=DU2628075 action=BUY orderType=LMT amount=224 tif=DAY orderRef= limitPrice=401.87} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.736877-05:00: {ibpyOrderId=ib45781 status=Filled order={account=DU2628075 action=SELL orderType=LMT amount=224 tif=DAY orderRef= limitPrice=401.85} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.751545-05:00: {ibpyOrderId=ib45783 status=Filled order={account=DU2628075 action=BUY orderType=LMT amount=224 tif=DAY orderRef= limitPrice=401.88} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.766544-05:00: {ibpyOrderId=ib45787 status=Filled order={account=DU2628075 action=SELL orderType=LMT amount=224 tif=DAY orderRef= limitPrice=401.87} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.780582-05:00: {ibpyOrderId=ib45791 status=Filled order={account=DU2628075 action=BUY orderType=LMT amount=224 tif=DAY orderRef= limitPrice=401.89} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.795493-05:00: {ibpyOrderId=ib45793 status=Filled order={account=DU2628075 action=SELL orderType=LMT amount=224 tif=DAY orderRef= limitPrice=401.88} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.809524-05:00: {ibpyOrderId=ib45795 status=Filled order={account=DU2628075 action=BUY orderType=LMT amount=224 tif=DAY orderRef= limitPrice=401.94} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.823883-05:00: {ibpyOrderId=ib45843 status=Filled order={account=DU2628075 action=SELL orderType=LMT amount=224 tif=DAY orderRef= limitPrice=402.35} contract={STK,,SMART,SPY,USD}}
+2022-11-23 15:57:53.840798-05:00: ##    END    ##

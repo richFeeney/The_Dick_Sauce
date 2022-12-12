@@ -1,0 +1,377 @@
+2022-11-11 07:33:39.240908-05:00: Try brokerClient IB port=7496
+2022-11-11 07:33:39.364428-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-11-11 07:33:39.378198-05:00: Connected to IB is successful using port=7496
+2022-11-11 07:33:39.412281-05:00: IBridgePy version 18.1.7
+2022-11-11 07:33:39.424960-05:00: fileName = UpdatedAlgoCommon.py
+2022-11-11 07:33:40.264682-05:00: ####    Starting to initialize trader    ####
+2022-11-11 07:33:40.279612-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-11-11 07:33:40.291579-05:00: CASH=515437.54
+2022-11-11 07:33:40.305542-05:00: portfolio_value=306822.87
+2022-11-11 07:33:40.319505-05:00: positions_value=208826.39
+2022-11-11 07:33:40.334465-05:00: ##    POSITIONS DU2628075   ##
+2022-11-11 07:33:40.347430-05:00: Symbol Amount Cost_basis
+2022-11-11 07:33:40.361393-05:00: STK,,,SPY,USD -527 390.23536395
+2022-11-11 07:33:40.375355-05:00: ##    NO any order    ##
+2022-11-11 07:33:40.389318-05:00: ####    Initialize trader COMPLETED    ####
+2022-11-11 09:36:57.296375-05:00: ModifyOrder ibpyOrderId=ib23614 security={STK,,SMART,SPY,USD} order={account=DU2628075 action=SELL orderType=LMT amount=253 tif=DAY orderRef= limitPrice=394.53499999999997}
+2022-11-11 09:36:58.374465-05:00: broker_client_factory.CallBacks::error:errorId=23614 errorCode=110 errorMessage=The price does not conform to the minimum price variation for this contract.
+2022-11-11 09:36:58.388929-05:00: broker_client_factory.CallBacks::_print_version:IBridgePy version= 18.1.7
+2022-11-11 13:20:47.672764-05:00: Try brokerClient IB port=7496
+2022-11-11 13:20:47.729583-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-11-11 13:20:47.744673-05:00: Connected to IB is successful using port=7496
+2022-11-11 13:20:47.764226-05:00: IBridgePy version 18.1.7
+2022-11-11 13:20:47.779442-05:00: fileName = UpdatedAlgoCommon.py
+2022-11-11 13:20:48.569329-05:00: ####    Starting to initialize trader    ####
+2022-11-11 13:20:48.586084-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-11-11 13:20:48.601417-05:00: CASH=515183.41
+2022-11-11 13:20:48.628896-05:00: portfolio_value=306054.91
+2022-11-11 13:20:48.642859-05:00: positions_value=209340.22
+2022-11-11 13:20:48.657067-05:00: ##    POSITIONS DU2628075   ##
+2022-11-11 13:20:48.672853-05:00: Symbol Amount Cost_basis
+2022-11-11 13:20:48.687664-05:00: STK,,,SPY,USD -527 393.45918295
+2022-11-11 13:20:48.703088-05:00: ##    NO any order    ##
+2022-11-11 13:20:48.717688-05:00: ####    Initialize trader COMPLETED    ####
+2022-11-11 13:22:08.928320-05:00: Try brokerClient IB port=7496
+2022-11-11 13:22:08.953160-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-11-11 13:22:08.974761-05:00: Connected to IB is successful using port=7496
+2022-11-11 13:22:09.001097-05:00: IBridgePy version 18.1.7
+2022-11-11 13:22:09.014217-05:00: fileName = UpdatedAlgoCommon.py
+2022-11-11 13:22:09.787487-05:00: ####    Starting to initialize trader    ####
+2022-11-11 13:22:09.802779-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-11-11 13:22:09.818068-05:00: CASH=415472.41
+2022-11-11 13:22:09.833525-05:00: portfolio_value=306041.47
+2022-11-11 13:22:09.848377-05:00: positions_value=109642.66
+2022-11-11 13:22:09.862920-05:00: ##    POSITIONS DU2628075   ##
+2022-11-11 13:22:09.877810-05:00: Symbol Amount Cost_basis
+2022-11-11 13:22:09.895438-05:00: STK,,,SPY,USD -276 393.45918295
+2022-11-11 13:22:09.915263-05:00: ##    NO any order    ##
+2022-11-11 13:22:09.927465-05:00: ####    Initialize trader COMPLETED    ####
+2022-11-11 13:36:35.319059-05:00: ModifyOrder ibpyOrderId=ib23716 security={STK,,SMART,SPY,USD} order={account=DU2628075 action=SELL orderType=LMT amount=251 tif=DAY orderRef= limitPrice=397.49}
+2022-11-11 14:12:37.372525-05:00: ModifyOrder ibpyOrderId=ib23973 security={STK,,SMART,SPY,USD} order={account=DU2628075 action=SELL orderType=LMT amount=251 tif=DAY orderRef= limitPrice=397.97}
+2022-11-11 14:50:52.021022-05:00: ModifyOrder ibpyOrderId=ib24216 security={STK,,SMART,SPY,USD} order={account=DU2628075 action=SELL orderType=LMT amount=250 tif=DAY orderRef= limitPrice=398.61}
+2022-11-11 14:52:54.267276-05:00: ModifyOrder ibpyOrderId=ib24233 security={STK,,SMART,SPY,USD} order={account=DU2628075 action=SELL orderType=LMT amount=250 tif=DAY orderRef= limitPrice=398.69}
+2022-11-11 16:00:00.763288-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-11-11 16:00:00.773289-05:00: CASH=305502.61
+2022-11-11 16:00:00.785257-05:00: portfolio_value=305854.51
+2022-11-11 16:00:00.798232-05:00: positions_value=209885.13
+2022-11-11 16:00:00.811187-05:00: ##    NO ANY POSITION    ##
+2022-11-11 16:00:00.821139-05:00: ##    Order Status DU2628075   ##
+2022-11-11 16:00:00.831506-05:00: {ibpyOrderId=ib23628 status=Filled order={account=DU2628075 action=BUY orderType=LMT amount=251 tif=DAY orderRef= limitPrice=397.19} contract={STK,,SMART,SPY,USD}}
+2022-11-11 16:00:00.842176-05:00: {ibpyOrderId=ib23716 status=Filled order={account=DU2628075 action=SELL orderType=LMT amount=251 tif=DAY orderRef= limitPrice=397.49} contract={STK,,SMART,SPY,USD}}
+2022-11-11 16:00:00.852217-05:00: {ibpyOrderId=ib23741 status=Filled order={account=DU2628075 action=BUY orderType=LMT amount=251 tif=DAY orderRef= limitPrice=397.64} contract={STK,,SMART,SPY,USD}}
+2022-11-11 16:00:00.862817-05:00: {ibpyOrderId=ib23749 status=Filled order={account=DU2628075 action=SELL orderType=LMT amount=251 tif=DAY orderRef= limitPrice=397.61} contract={STK,,SMART,SPY,USD}}
+2022-11-11 16:00:00.873704-05:00: {ibpyOrderId=ib23771 status=Filled order={account=DU2628075 action=BUY orderType=LMT amount=251 tif=DAY orderRef= limitPrice=397.62} contract={STK,,SMART,SPY,USD}}
+2022-11-11 16:00:00.884107-05:00: {ibpyOrderId=ib23777 status=Filled order={account=DU2628075 action=SELL orderType=LMT amount=251 tif=DAY orderRef= limitPrice=397.56} contract={STK,,SMART,SPY,USD}}
+2022-11-11 16:00:00.899136-05:00: {ibpyOrderId=ib23781 status=Filled order={account=DU2628075 action=BUY orderType=LMT amount=251 tif=DAY orderRef= limitPrice=397.64} contract={STK,,SMART,SPY,USD}}
+2022-11-11 16:00:00.909506-05:00: {ibpyOrderId=ib23785 status=Filled order={account=DU2628075 action=SELL orderType=LMT amount=251 tif=DAY orderRef= limitPrice=397.54} contract={STK,,SMART,SPY,USD}}
+2022-11-11 16:00:00.919935-05:00: {ibpyOrderId=ib23807 status=Filled order={account=DU2628075 action=BUY orderType=LMT amount=251 tif=DAY orderRef= limitPrice=397.55} contract={STK,,SMART,SPY,USD}}
+2022-11-11 16:00:00.930413-05:00: {ibpyOrderId=ib23863 status=Filled order={account=DU2628075 action=SELL orderType=LMT amount=251 tif=DAY orderRef= limitPrice=397.95} contract={STK,,SMART,SPY,USD}}
+2022-11-11 16:00:00.940711-05:00: {ibpyOrderId=ib23867 status=Filled order={account=DU2628075 action=BUY orderType=LMT amount=251 tif=DAY orderRef= limitPrice=398.04} contract={STK,,SMART,SPY,USD}}
+2022-11-11 16:00:00.950508-05:00: {ibpyOrderId=ib23889 status=Filled order={account=DU2628075 action=SELL orderType=LMT amount=251 tif=DAY orderRef= limitPrice=398.03} contract={STK,,SMART,SPY,USD}}
+2022-11-11 16:00:00.962218-05:00: {ibpyOrderId=ib23899 status=Filled order={account=DU2628075 action=BUY orderType=LMT amount=251 tif=DAY orderRef= limitPrice=398.08} contract={STK,,SMART,SPY,USD}}
+2022-11-11 16:00:00.973347-05:00: {ibpyOrderId=ib23903 status=Filled order={account=DU2628075 action=SELL orderType=LMT amount=251 tif=DAY orderRef= limitPrice=397.99} contract={STK,,SMART,SPY,USD}}
+2022-11-11 16:00:00.995191-05:00: {ibpyOrderId=ib23907 status=Filled order={account=DU2628075 action=BUY orderType=LMT amount=251 tif=DAY orderRef= limitPrice=398.05} contract={STK,,SMART,SPY,USD}}
+2022-11-11 16:00:01.000738-05:00: {ibpyOrderId=ib23925 status=Filled order={account=DU2628075 action=SELL orderType=LMT amount=251 tif=DAY orderRef= limitPrice=398.14} contract={STK,,SMART,SPY,USD}}
+2022-11-11 16:00:01.004827-05:00: {ibpyOrderId=ib23929 status=Filled order={account=DU2628075 action=BUY orderType=LMT amount=251 tif=DAY orderRef= limitPrice=398.2} contract={STK,,SMART,SPY,USD}}
+2022-11-11 16:00:01.009453-05:00: {ibpyOrderId=ib23933 status=Filled order={account=DU2628075 action=SELL orderType=LMT amount=251 tif=DAY orderRef= limitPrice=398.12} contract={STK,,SMART,SPY,USD}}
+2022-11-11 16:00:01.018433-05:00: {ibpyOrderId=ib23935 status=Filled order={account=DU2628075 action=BUY orderType=LMT amount=251 tif=DAY orderRef= limitPrice=398.17} contract={STK,,SMART,SPY,USD}}
+2022-11-11 16:00:01.028455-05:00: {ibpyOrderId=ib23961 status=Filled order={account=DU2628075 action=SELL orderType=LMT amount=251 tif=DAY orderRef= limitPrice=398.25} contract={STK,,SMART,SPY,USD}}
+2022-11-11 16:00:01.039175-05:00: {ibpyOrderId=ib23971 status=Filled order={account=DU2628075 action=BUY orderType=LMT amount=251 tif=DAY orderRef= limitPrice=398.26} contract={STK,,SMART,SPY,USD}}
+2022-11-11 16:00:01.049941-05:00: {ibpyOrderId=ib23973 status=Filled order={account=DU2628075 action=SELL orderType=LMT amount=251 tif=DAY orderRef= limitPrice=397.97} contract={STK,,SMART,SPY,USD}}
+2022-11-11 16:00:01.061195-05:00: {ibpyOrderId=ib23978 status=Filled order={account=DU2628075 action=BUY orderType=LMT amount=251 tif=DAY orderRef= limitPrice=398.27} contract={STK,,SMART,SPY,USD}}
+2022-11-11 16:00:01.073553-05:00: {ibpyOrderId=ib23982 status=Filled order={account=DU2628075 action=SELL orderType=LMT amount=251 tif=DAY orderRef= limitPrice=398.23} contract={STK,,SMART,SPY,USD}}
+2022-11-11 16:00:01.085672-05:00: {ibpyOrderId=ib24050 status=Filled order={account=DU2628075 action=BUY orderType=LMT amount=250 tif=DAY orderRef= limitPrice=398.53} contract={STK,,SMART,SPY,USD}}
+2022-11-11 16:00:01.096629-05:00: {ibpyOrderId=ib24192 status=Filled order={account=DU2628075 action=SELL orderType=LMT amount=250 tif=DAY orderRef= limitPrice=398.99} contract={STK,,SMART,SPY,USD}}
+2022-11-11 16:00:01.109026-05:00: {ibpyOrderId=ib24202 status=Filled order={account=DU2628075 action=BUY orderType=LMT amount=250 tif=DAY orderRef= limitPrice=398.98} contract={STK,,SMART,SPY,USD}}
+2022-11-11 16:00:01.121134-05:00: {ibpyOrderId=ib24216 status=Filled order={account=DU2628075 action=SELL orderType=LMT amount=250 tif=DAY orderRef= limitPrice=398.61} contract={STK,,SMART,SPY,USD}}
+2022-11-11 16:00:01.133711-05:00: {ibpyOrderId=ib24229 status=Filled order={account=DU2628075 action=BUY orderType=LMT amount=250 tif=DAY orderRef= limitPrice=398.92} contract={STK,,SMART,SPY,USD}}
+2022-11-11 16:00:01.143660-05:00: {ibpyOrderId=ib24233 status=Filled order={account=DU2628075 action=SELL orderType=LMT amount=250 tif=DAY orderRef= limitPrice=398.69} contract={STK,,SMART,SPY,USD}}
+2022-11-11 16:00:01.154904-05:00: {ibpyOrderId=ib24238 status=Filled order={account=DU2628075 action=BUY orderType=LMT amount=250 tif=DAY orderRef= limitPrice=398.94} contract={STK,,SMART,SPY,USD}}
+2022-11-11 16:00:01.165038-05:00: {ibpyOrderId=ib24262 status=Filled order={account=DU2628075 action=SELL orderType=LMT amount=250 tif=DAY orderRef= limitPrice=398.97} contract={STK,,SMART,SPY,USD}}
+2022-11-11 16:00:01.175367-05:00: {ibpyOrderId=ib24268 status=Filled order={account=DU2628075 action=BUY orderType=LMT amount=250 tif=DAY orderRef= limitPrice=398.98} contract={STK,,SMART,SPY,USD}}
+2022-11-11 16:00:01.186094-05:00: {ibpyOrderId=ib24290 status=Filled order={account=DU2628075 action=SELL orderType=LMT amount=250 tif=DAY orderRef= limitPrice=399.03} contract={STK,,SMART,SPY,USD}}
+2022-11-11 16:00:01.201716-05:00: {ibpyOrderId=ib24304 status=Filled order={account=DU2628075 action=BUY orderType=LMT amount=250 tif=DAY orderRef= limitPrice=399.04} contract={STK,,SMART,SPY,USD}}
+2022-11-11 16:00:01.217157-05:00: {ibpyOrderId=ib24308 status=Filled order={account=DU2628075 action=SELL orderType=LMT amount=250 tif=DAY orderRef= limitPrice=399.0} contract={STK,,SMART,SPY,USD}}
+2022-11-11 16:00:01.228807-05:00: {ibpyOrderId=ib24330 status=Filled order={account=DU2628075 action=SELL orderType=LMT amount=251 tif=DAY orderRef= limitPrice=398.26} contract={STK,,SMART,SPY,USD}}
+2022-11-11 16:00:01.236386-05:00: {ibpyOrderId=ib24410 status=Filled order={account=DU2628075 action=BUY orderType=LMT amount=251 tif=DAY orderRef= limitPrice=397.9} contract={STK,,SMART,SPY,USD}}
+2022-11-11 16:00:01.248984-05:00: {ibpyOrderId=ib24436 status=Filled order={account=DU2628075 action=SELL orderType=LMT amount=251 tif=DAY orderRef= limitPrice=398.03} contract={STK,,SMART,SPY,USD}}
+2022-11-11 16:00:01.261638-05:00: {ibpyOrderId=ib24440 status=Filled order={account=DU2628075 action=BUY orderType=LMT amount=251 tif=DAY orderRef= limitPrice=398.03} contract={STK,,SMART,SPY,USD}}
+2022-11-11 16:00:01.272546-05:00: {ibpyOrderId=ib24442 status=Filled order={account=DU2628075 action=SELL orderType=LMT amount=251 tif=DAY orderRef= limitPrice=398.0} contract={STK,,SMART,SPY,USD}}
+2022-11-11 16:00:01.282391-05:00: {ibpyOrderId=ib24444 status=Filled order={account=DU2628075 action=BUY orderType=LMT amount=251 tif=DAY orderRef= limitPrice=398.03} contract={STK,,SMART,SPY,USD}}
+2022-11-11 16:00:01.293710-05:00: {ibpyOrderId=ib24448 status=Filled order={account=DU2628075 action=SELL orderType=LMT amount=251 tif=DAY orderRef= limitPrice=398.0} contract={STK,,SMART,SPY,USD}}
+2022-11-11 16:00:01.303683-05:00: {ibpyOrderId=ib24454 status=Filled order={account=DU2628075 action=BUY orderType=LMT amount=251 tif=DAY orderRef= limitPrice=398.01} contract={STK,,SMART,SPY,USD}}
+2022-11-11 16:00:01.313809-05:00: {ibpyOrderId=ib24456 status=Filled order={account=DU2628075 action=SELL orderType=LMT amount=251 tif=DAY orderRef= limitPrice=397.99} contract={STK,,SMART,SPY,USD}}
+2022-11-11 16:00:01.335059-05:00: {ibpyOrderId=ib24460 status=Filled order={account=DU2628075 action=BUY orderType=LMT amount=251 tif=DAY orderRef= limitPrice=398.01} contract={STK,,SMART,SPY,USD}}
+2022-11-11 16:00:01.344952-05:00: {ibpyOrderId=ib24462 status=Filled order={account=DU2628075 action=SELL orderType=LMT amount=251 tif=DAY orderRef= limitPrice=397.97} contract={STK,,SMART,SPY,USD}}
+2022-11-11 16:00:01.356112-05:00: {ibpyOrderId=ib24464 status=Filled order={account=DU2628075 action=BUY orderType=LMT amount=251 tif=DAY orderRef= limitPrice=398.04} contract={STK,,SMART,SPY,USD}}
+2022-11-11 16:00:01.366726-05:00: {ibpyOrderId=ib24528 status=Filled order={account=DU2628075 action=SELL orderType=LMT amount=251 tif=DAY orderRef= limitPrice=398.01} contract={STK,,SMART,SPY,USD}}
+2022-11-11 16:00:01.376854-05:00: {ibpyOrderId=ib24552 status=Filled order={account=DU2628075 action=BUY orderType=LMT amount=251 tif=DAY orderRef= limitPrice=398.27} contract={STK,,SMART,SPY,USD}}
+2022-11-11 16:00:01.387057-05:00: {ibpyOrderId=ib24554 status=Filled order={account=DU2628075 action=SELL orderType=LMT amount=251 tif=DAY orderRef= limitPrice=398.25} contract={STK,,SMART,SPY,USD}}
+2022-11-11 16:00:01.402317-05:00: {ibpyOrderId=ib24556 status=Filled order={account=DU2628075 action=BUY orderType=LMT amount=251 tif=DAY orderRef= limitPrice=398.3} contract={STK,,SMART,SPY,USD}}
+2022-11-11 16:00:01.414045-05:00: {ibpyOrderId=ib24662 status=Filled order={account=DU2628075 action=SELL orderType=LMT amount=251 tif=DAY orderRef= limitPrice=398.25} contract={STK,,SMART,SPY,USD}}
+2022-11-11 16:00:01.425016-05:00: {ibpyOrderId=ib24670 status=Filled order={account=DU2628075 action=BUY orderType=MKT amount=527 tif=DAY orderRef=} contract={STK,,SMART,SPY,USD}}
+2022-11-11 16:00:01.435986-05:00: ##    END    ##
+2022-11-11 16:00:10.268732-05:00: broker_client_factory.CallBacks:errorId=24674 errorCode=201 errorMessage=Order rejected - reason:Exchange is closed.
+2022-11-11 16:00:14.514858-05:00: IBridgePy.Trader::modify_order: Cannot modify ibpyOrderId=ib24674 orderStatus=Inactive
+2022-11-11 17:57:03.730973-05:00: Try brokerClient IBinsync port=7496
+2022-11-11 17:57:03.774685-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-11-11 17:57:03.778701-05:00: Connected to IB is successful using port=7496
+2022-11-11 17:57:03.791291-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-11-11 17:57:03.801671-05:00: CASH=305499.98
+2022-11-11 17:57:03.805658-05:00: portfolio_value=305711.7
+2022-11-11 17:57:03.809648-05:00: positions_value=0.0
+2022-11-11 17:57:03.814635-05:00: ##    NO ANY POSITION    ##
+2022-11-11 17:57:03.824780-05:00: ##    NO any order    ##
+2022-11-11 18:29:09.117853-05:00: broker_client_factory.CallBacks:errorId=24703 errorCode=162 errorMessage=Historical Market Data Service error message:invalid step: 1
+2022-11-11 18:29:09.153512-05:00: broker_client_factory.CallBacks::_print_version:IBridgePy version= 18.1.7
+2022-11-11 18:29:30.042484-05:00: Try brokerClient IBinsync port=7496
+2022-11-11 18:29:30.064718-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-11-11 18:29:30.078092-05:00: Connected to IB is successful using port=7496
+2022-11-11 18:29:30.094170-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-11-11 18:29:30.111821-05:00: CASH=305499.98
+2022-11-11 18:29:30.122768-05:00: portfolio_value=305711.7
+2022-11-11 18:29:30.132732-05:00: positions_value=0.0
+2022-11-11 18:29:30.143926-05:00: ##    NO ANY POSITION    ##
+2022-11-11 18:29:30.155534-05:00: ##    NO any order    ##
+2022-11-11 18:29:51.408659-05:00: broker_client_factory.CallBacks:errorId=24679 errorCode=162 errorMessage=Historical Market Data Service error message:invalid step: 1
+2022-11-11 18:29:51.452291-05:00: broker_client_factory.CallBacks::_print_version:IBridgePy version= 18.1.7
+2022-11-11 18:33:17.482549-05:00: Try brokerClient IB port=7496
+2022-11-11 18:33:17.525933-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-11-11 18:33:17.538017-05:00: Connected to IB is successful using port=7496
+2022-11-11 18:33:17.556665-05:00: IBridgePy version 18.1.7
+2022-11-11 18:33:17.570288-05:00: fileName = UpdatedAlgoCommon.py
+2022-11-11 18:33:18.352215-05:00: ####    Starting to initialize trader    ####
+2022-11-11 18:33:18.362543-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-11-11 18:33:18.372375-05:00: CASH=305499.98
+2022-11-11 18:33:18.382949-05:00: portfolio_value=305711.7
+2022-11-11 18:33:18.392903-05:00: positions_value=0.0
+2022-11-11 18:33:18.404019-05:00: ##    NO ANY POSITION    ##
+2022-11-11 18:33:18.414099-05:00: ##    NO any order    ##
+2022-11-11 18:33:18.425567-05:00: ####    Initialize trader COMPLETED    ####
+2022-11-11 18:34:42.857367-05:00: Try brokerClient IBinsync port=7496
+2022-11-11 18:34:42.903497-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-11-11 18:34:42.917325-05:00: Connected to IB is successful using port=7496
+2022-11-11 18:34:42.934223-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-11-11 18:34:42.951166-05:00: CASH=305499.98
+2022-11-11 18:34:42.962107-05:00: portfolio_value=305711.7
+2022-11-11 18:34:42.972101-05:00: positions_value=0.0
+2022-11-11 18:34:42.982688-05:00: ##    NO ANY POSITION    ##
+2022-11-11 18:34:42.994101-05:00: ##    NO any order    ##
+2022-11-11 18:38:02.449713-05:00: broker_client_factory.CallBacks::error:errorId=24680 errorCode=321 errorMessage=Error validating request.-'bS' : cause - Historical data requested duration is invalid.
+2022-11-11 18:38:02.486185-05:00: broker_client_factory.CallBacks::_print_version:IBridgePy version= 18.1.7
+2022-11-11 18:38:09.297174-05:00: broker_client_factory.CallBacks::error:errorId=24680 errorCode=321 errorMessage=Error validating request.-'bS' : cause - Historical data requested duration is invalid.
+2022-11-11 18:38:09.334106-05:00: broker_client_factory.CallBacks::_print_version:IBridgePy version= 18.1.7
+2022-11-11 18:38:18.185485-05:00: Try brokerClient IBinsync port=7496
+2022-11-11 18:38:18.229902-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-11-11 18:38:18.246084-05:00: Connected to IB is successful using port=7496
+2022-11-11 18:38:18.257729-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-11-11 18:38:18.268900-05:00: CASH=305499.98
+2022-11-11 18:38:18.272918-05:00: portfolio_value=305711.7
+2022-11-11 18:38:18.276906-05:00: positions_value=0.0
+2022-11-11 18:38:18.281864-05:00: ##    NO ANY POSITION    ##
+2022-11-11 18:38:18.286082-05:00: ##    NO any order    ##
+2022-11-11 18:38:20.608634-05:00: broker_client_factory.CallBacks::error:errorId=24678 errorCode=321 errorMessage=Error validating request.-'bS' : cause - Historical data requested duration is invalid.
+2022-11-11 18:38:20.645170-05:00: broker_client_factory.CallBacks::_print_version:IBridgePy version= 18.1.7
+2022-11-11 18:38:34.513689-05:00: broker_client_factory.CallBacks::error:errorId=24678 errorCode=321 errorMessage=Error validating request.-'bS' : cause - Historical data requested duration is invalid.
+2022-11-11 18:38:34.549593-05:00: broker_client_factory.CallBacks::_print_version:IBridgePy version= 18.1.7
+2022-11-11 18:38:41.321683-05:00: Try brokerClient IBinsync port=7496
+2022-11-11 18:38:41.365422-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-11-11 18:38:41.377501-05:00: Connected to IB is successful using port=7496
+2022-11-11 18:38:41.395655-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-11-11 18:38:41.413066-05:00: CASH=305499.98
+2022-11-11 18:38:41.423068-05:00: portfolio_value=305711.7
+2022-11-11 18:38:41.432934-05:00: positions_value=0.0
+2022-11-11 18:38:41.443482-05:00: ##    NO ANY POSITION    ##
+2022-11-11 18:38:41.455131-05:00: ##    NO any order    ##
+2022-11-11 18:38:43.537860-05:00: broker_client_factory.CallBacks::error:errorId=24678 errorCode=321 errorMessage=Error validating request.-'bS' : cause - Historical data bar size setting is invalid. Legal ones are: 1 secs, 5 secs, 10 secs, 15 secs, 30 secs, 1 min, 2 mins, 3 mins, 5 mins, 10 mins, 15 mins, 20 mins, 30 mins, 1 hour, 2 hours, 3 hours, 4 hours, 8 hours, 1 day, 1W, 1M
+2022-11-11 18:38:43.581367-05:00: broker_client_factory.CallBacks::_print_version:IBridgePy version= 18.1.7
+2022-11-11 18:39:09.289655-05:00: Try brokerClient IBinsync port=7496
+2022-11-11 18:39:09.339896-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-11-11 18:39:09.352957-05:00: Connected to IB is successful using port=7496
+2022-11-11 18:39:09.370062-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-11-11 18:39:09.387107-05:00: CASH=305499.98
+2022-11-11 18:39:09.397079-05:00: portfolio_value=305711.7
+2022-11-11 18:39:09.406616-05:00: positions_value=0.0
+2022-11-11 18:39:09.418158-05:00: ##    NO ANY POSITION    ##
+2022-11-11 18:39:09.429146-05:00: ##    NO any order    ##
+2022-11-11 18:39:14.977680-05:00: broker_client_factory.CallBacks::error:errorId=24679 errorCode=321 errorMessage=Error validating request.-'bS' : cause - Historical data requested duration is invalid.
+2022-11-11 18:39:15.012592-05:00: broker_client_factory.CallBacks::_print_version:IBridgePy version= 18.1.7
+2022-11-11 18:39:33.497622-05:00: Try brokerClient IBinsync port=7496
+2022-11-11 18:39:33.542680-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-11-11 18:39:33.555036-05:00: Connected to IB is successful using port=7496
+2022-11-11 18:39:33.582055-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-11-11 18:39:33.599090-05:00: CASH=305499.98
+2022-11-11 18:39:33.608099-05:00: portfolio_value=305711.7
+2022-11-11 18:39:33.618041-05:00: positions_value=0.0
+2022-11-11 18:39:33.630087-05:00: ##    NO ANY POSITION    ##
+2022-11-11 18:39:33.640918-05:00: ##    NO any order    ##
+2022-11-11 18:47:52.089368-05:00: broker_client_factory.CallBacks:errorId=24697 errorCode=162 errorMessage=Historical Market Data Service error message:invalid step: 1
+2022-11-11 18:47:52.124913-05:00: broker_client_factory.CallBacks::_print_version:IBridgePy version= 18.1.7
+2022-11-11 18:48:17.224793-05:00: Try brokerClient IBinsync port=7496
+2022-11-11 18:48:17.264368-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-11-11 18:48:17.271410-05:00: Connected to IB is successful using port=7496
+2022-11-11 18:48:17.282103-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-11-11 18:48:17.293376-05:00: CASH=305499.98
+2022-11-11 18:48:17.297365-05:00: portfolio_value=305711.7
+2022-11-11 18:48:17.301355-05:00: positions_value=0.0
+2022-11-11 18:48:17.305344-05:00: ##    NO ANY POSITION    ##
+2022-11-11 18:48:17.316195-05:00: ##    NO any order    ##
+2022-11-11 19:18:01.674589-05:00: Try brokerClient IB port=7496
+2022-11-11 19:18:01.698585-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-11-11 19:18:01.710583-05:00: Connected to IB is successful using port=7496
+2022-11-11 19:18:01.727536-05:00: IBridgePy version 18.1.7
+2022-11-11 19:18:01.737494-05:00: fileName = UpdatedAlgoCommon.py
+2022-11-11 19:18:02.564934-05:00: ####    Starting to initialize trader    ####
+2022-11-11 19:18:02.577593-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-11-11 19:18:02.589604-05:00: CASH=305499.98
+2022-11-11 19:18:02.599731-05:00: portfolio_value=305711.7
+2022-11-11 19:18:02.609827-05:00: positions_value=0.0
+2022-11-11 19:18:02.620554-05:00: ##    NO ANY POSITION    ##
+2022-11-11 19:18:02.631518-05:00: ##    NO any order    ##
+2022-11-11 19:18:02.642486-05:00: ####    Initialize trader COMPLETED    ####
+2022-11-11 19:18:31.478468-05:00: Try brokerClient IB port=7496
+2022-11-11 19:18:31.522969-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-11-11 19:18:31.535059-05:00: Connected to IB is successful using port=7496
+2022-11-11 19:18:31.557326-05:00: IBridgePy version 18.1.7
+2022-11-11 19:18:31.569329-05:00: fileName = UpdatedAlgoCommon.py
+2022-11-11 19:18:32.412032-05:00: ####    Starting to initialize trader    ####
+2022-11-11 19:18:32.425812-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-11-11 19:18:32.437144-05:00: CASH=305499.98
+2022-11-11 19:18:32.448191-05:00: portfolio_value=305711.7
+2022-11-11 19:18:32.458965-05:00: positions_value=0.0
+2022-11-11 19:18:32.469987-05:00: ##    NO ANY POSITION    ##
+2022-11-11 19:18:32.480146-05:00: ##    NO any order    ##
+2022-11-11 19:18:32.492612-05:00: ####    Initialize trader COMPLETED    ####
+2022-11-11 19:18:45.762969-05:00: Try brokerClient IB port=7496
+2022-11-11 19:18:45.807761-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-11-11 19:18:45.820140-05:00: Connected to IB is successful using port=7496
+2022-11-11 19:18:45.836953-05:00: IBridgePy version 18.1.7
+2022-11-11 19:18:45.849085-05:00: fileName = UpdatedAlgoCommon.py
+2022-11-11 19:18:46.703099-05:00: ####    Starting to initialize trader    ####
+2022-11-11 19:18:46.719134-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-11-11 19:18:46.729180-05:00: CASH=305499.98
+2022-11-11 19:18:46.739214-05:00: portfolio_value=305711.7
+2022-11-11 19:18:46.749219-05:00: positions_value=0.0
+2022-11-11 19:18:46.760941-05:00: ##    NO ANY POSITION    ##
+2022-11-11 19:18:46.771032-05:00: ##    NO any order    ##
+2022-11-11 19:18:46.783111-05:00: ####    Initialize trader COMPLETED    ####
+2022-11-11 19:19:05.127427-05:00: Try brokerClient IB port=7496
+2022-11-11 19:19:05.152437-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-11-11 19:19:05.163112-05:00: Connected to IB is successful using port=7496
+2022-11-11 19:19:05.179975-05:00: IBridgePy version 18.1.7
+2022-11-11 19:19:05.190311-05:00: fileName = UpdatedAlgoCommon.py
+2022-11-11 19:19:06.044023-05:00: ####    Starting to initialize trader    ####
+2022-11-11 19:19:06.056404-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-11-11 19:19:06.070468-05:00: CASH=305499.98
+2022-11-11 19:19:06.082551-05:00: portfolio_value=305711.7
+2022-11-11 19:19:06.094953-05:00: positions_value=0.0
+2022-11-11 19:19:06.107987-05:00: ##    NO ANY POSITION    ##
+2022-11-11 19:19:06.117559-05:00: ##    NO any order    ##
+2022-11-11 19:19:06.122033-05:00: ####    Initialize trader COMPLETED    ####
+2022-11-11 19:19:06.520510-05:00: broker_client_factory.CallBacks:errorId=24682 errorCode=399 errorMessage=Order Message: SELL 250 SPY ARCA Warning: your order will not be placed at the exchange until 2022-11-14 09:30:00 US/Eastern
+2022-11-11 19:20:48.530894-05:00: Try brokerClient IB port=7496
+2022-11-11 19:20:48.568601-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-11-11 19:20:48.580151-05:00: Connected to IB is successful using port=7496
+2022-11-11 19:20:48.597261-05:00: IBridgePy version 18.1.7
+2022-11-11 19:20:48.609805-05:00: fileName = UpdatedAlgoCommon.py
+2022-11-11 19:20:49.462296-05:00: ####    Starting to initialize trader    ####
+2022-11-11 19:20:49.471862-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-11-11 19:20:49.483479-05:00: CASH=305499.98
+2022-11-11 19:20:49.493289-05:00: portfolio_value=305711.7
+2022-11-11 19:20:49.503991-05:00: positions_value=0.0
+2022-11-11 19:20:49.514757-05:00: ##    NO ANY POSITION    ##
+2022-11-11 19:20:49.525800-05:00: ##    Order Status DU2628075   ##
+2022-11-11 19:20:49.550246-05:00: {ibpyOrderId=ib24682 status=PreSubmitted order={account=DU2628075 action=SELL orderType=LMT amount=250 tif=DAY orderRef= limitPrice=398.45} contract={STK,,SMART,SPY,USD}}
+2022-11-11 19:20:49.563376-05:00: ##    END    ##
+2022-11-11 19:20:49.573810-05:00: ####    Initialize trader COMPLETED    ####
+2022-11-11 19:20:49.979661-05:00: broker_client_factory.CallBacks:errorId=24690 errorCode=399 errorMessage=Order Message: SELL 250 SPY ARCA Warning: your order will not be placed at the exchange until 2022-11-14 09:30:00 US/Eastern
+2022-11-11 19:21:04.097833-05:00: broker_client_factory.CallBacks:errorId=24705 errorCode=162 errorMessage=Historical Market Data Service error message:Historical data request pacing violation
+2022-11-11 19:21:04.109122-05:00: broker_client_factory.CallBacks::_print_version:IBridgePy version= 18.1.7
+2022-11-11 19:29:08.983683-05:00: Try brokerClient IB port=7496
+2022-11-11 19:29:09.029102-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-11-11 19:29:09.049268-05:00: Connected to IB is successful using port=7496
+2022-11-11 19:29:09.067721-05:00: IBridgePy version 18.1.7
+2022-11-11 19:29:09.078834-05:00: fileName = UpdatedAlgoCommon.py
+2022-11-11 19:29:09.873863-05:00: ####    Starting to initialize trader    ####
+2022-11-11 19:29:09.886054-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-11-11 19:29:09.897904-05:00: CASH=305499.98
+2022-11-11 19:29:09.910129-05:00: portfolio_value=305711.7
+2022-11-11 19:29:09.919197-05:00: positions_value=0.0
+2022-11-11 19:29:09.934241-05:00: ##    NO ANY POSITION    ##
+2022-11-11 19:29:09.944709-05:00: ##    Order Status DU2628075   ##
+2022-11-11 19:29:09.955289-05:00: {ibpyOrderId=ib24682 status=PreSubmitted order={account=DU2628075 action=SELL orderType=LMT amount=250 tif=DAY orderRef= limitPrice=398.45} contract={STK,,SMART,SPY,USD}}
+2022-11-11 19:29:09.966035-05:00: {ibpyOrderId=ib24690 status=PreSubmitted order={account=DU2628075 action=SELL orderType=LMT amount=250 tif=DAY orderRef= limitPrice=398.46} contract={STK,,SMART,SPY,USD}}
+2022-11-11 19:29:09.976909-05:00: ##    END    ##
+2022-11-11 19:29:09.987980-05:00: ####    Initialize trader COMPLETED    ####
+2022-11-11 19:29:10.128796-05:00: broker_client_factory.CallBacks:errorId=24697 errorCode=399 errorMessage=Order Message: SELL 250 SPY ARCA Warning: your order will not be placed at the exchange until 2022-11-14 09:30:00 US/Eastern
+2022-11-11 19:30:01.578154-05:00: Try brokerClient IBinsync port=7496
+2022-11-11 19:30:01.623237-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-11-11 19:30:01.635396-05:00: Connected to IB is successful using port=7496
+2022-11-11 19:30:01.652363-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-11-11 19:30:01.670146-05:00: CASH=305499.98
+2022-11-11 19:30:01.680118-05:00: portfolio_value=305711.7
+2022-11-11 19:30:01.684352-05:00: positions_value=0.0
+2022-11-11 19:30:01.689369-05:00: ##    NO ANY POSITION    ##
+2022-11-11 19:30:01.694356-05:00: ##    Order Status DU2628075   ##
+2022-11-11 19:30:01.698244-05:00: {ibpyOrderId=ib24682 status=PreSubmitted order={account=DU2628075 action=SELL orderType=LMT amount=250 tif=DAY orderRef= limitPrice=398.45} contract={STK,,SMART,SPY,USD}}
+2022-11-11 19:30:01.701767-05:00: {ibpyOrderId=ib24697 status=PreSubmitted order={account=DU2628075 action=SELL orderType=LMT amount=250 tif=DAY orderRef= limitPrice=398.53} contract={STK,,SMART,SPY,USD}}
+2022-11-11 19:30:01.733702-05:00: {ibpyOrderId=ib24690 status=PreSubmitted order={account=DU2628075 action=SELL orderType=LMT amount=250 tif=DAY orderRef= limitPrice=398.46} contract={STK,,SMART,SPY,USD}}
+2022-11-11 19:30:01.750849-05:00: ##    END    ##
+2022-11-11 23:13:58.411438-05:00: Try brokerClient IBinsync port=7496
+2022-11-11 23:13:58.434224-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-11-11 23:13:58.446082-05:00: Connected to IB is successful using port=7496
+2022-11-11 23:13:58.463007-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-11-11 23:13:58.480451-05:00: CASH=305499.98
+2022-11-11 23:13:58.490396-05:00: portfolio_value=305767.64
+2022-11-11 23:13:58.500152-05:00: positions_value=0.0
+2022-11-11 23:13:58.512152-05:00: ##    NO ANY POSITION    ##
+2022-11-11 23:13:58.522145-05:00: ##    Order Status DU2628075   ##
+2022-11-11 23:13:58.533093-05:00: {ibpyOrderId=ib24682 status=PreSubmitted order={account=DU2628075 action=SELL orderType=LMT amount=250 tif=DAY orderRef= limitPrice=398.45} contract={STK,,SMART,SPY,USD}}
+2022-11-11 23:13:58.543267-05:00: {ibpyOrderId=ib24697 status=PreSubmitted order={account=DU2628075 action=SELL orderType=LMT amount=250 tif=DAY orderRef= limitPrice=398.53} contract={STK,,SMART,SPY,USD}}
+2022-11-11 23:13:58.553813-05:00: {ibpyOrderId=ib24690 status=PreSubmitted order={account=DU2628075 action=SELL orderType=LMT amount=250 tif=DAY orderRef= limitPrice=398.46} contract={STK,,SMART,SPY,USD}}
+2022-11-11 23:13:58.563540-05:00: ##    END    ##
+2022-11-11 23:15:47.014339-05:00: Try brokerClient IBinsync port=7496
+2022-11-11 23:15:47.035041-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-11-11 23:15:47.048055-05:00: Connected to IB is successful using port=7496
+2022-11-11 23:15:47.063305-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-11-11 23:15:47.087129-05:00: CASH=305499.98
+2022-11-11 23:15:47.105670-05:00: portfolio_value=305767.64
+2022-11-11 23:15:47.114970-05:00: positions_value=0.0
+2022-11-11 23:15:47.126584-05:00: ##    NO ANY POSITION    ##
+2022-11-11 23:15:47.138104-05:00: ##    Order Status DU2628075   ##
+2022-11-11 23:15:47.148010-05:00: {ibpyOrderId=ib24682 status=PreSubmitted order={account=DU2628075 action=SELL orderType=LMT amount=250 tif=DAY orderRef= limitPrice=398.45} contract={STK,,SMART,SPY,USD}}
+2022-11-11 23:15:47.159068-05:00: {ibpyOrderId=ib24697 status=PreSubmitted order={account=DU2628075 action=SELL orderType=LMT amount=250 tif=DAY orderRef= limitPrice=398.53} contract={STK,,SMART,SPY,USD}}
+2022-11-11 23:15:47.169157-05:00: {ibpyOrderId=ib24690 status=PreSubmitted order={account=DU2628075 action=SELL orderType=LMT amount=250 tif=DAY orderRef= limitPrice=398.46} contract={STK,,SMART,SPY,USD}}
+2022-11-11 23:15:47.178190-05:00: ##    END    ##
+2022-11-11 23:28:27.133922-05:00: Try brokerClient IBinsync port=7496
+2022-11-11 23:28:27.302649-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-11-11 23:28:27.389454-05:00: Connected to IB is successful using port=7496
+2022-11-11 23:28:27.406423-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-11-11 23:28:27.433461-05:00: CASH=305499.98
+2022-11-11 23:28:27.458360-05:00: portfolio_value=305767.64
+2022-11-11 23:28:27.481147-05:00: positions_value=0.0
+2022-11-11 23:28:57.504367-05:00: broker_client_factory.BrokerClient::request_data: EXIT, the following requestRecord failed
+2022-11-11 23:28:57.555561-05:00: {reqId=24699,status=Submitted,reqType=reqPositions,followUp=True,waitForFeedbackInSeconds=30,param={}}
+2022-11-11 23:31:02.140998-05:00: Try brokerClient IBinsync port=7496
+2022-11-11 23:31:02.156776-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-11-11 23:31:02.163790-05:00: Connected to IB is successful using port=7496
+2022-11-11 23:31:02.175101-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-11-11 23:31:02.185102-05:00: CASH=305499.98
+2022-11-11 23:31:02.196072-05:00: portfolio_value=305767.64
+2022-11-11 23:31:02.205268-05:00: positions_value=0.0
+2022-11-11 23:31:18.168648-05:00: Try brokerClient IBinsync port=7496
+2022-11-11 23:31:18.214374-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-11-11 23:31:18.226314-05:00: Connected to IB is successful using port=7496
+2022-11-11 23:31:18.243269-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-11-11 23:31:18.260251-05:00: CASH=305499.98
+2022-11-11 23:31:18.270225-05:00: portfolio_value=305767.64
+2022-11-11 23:31:18.280170-05:00: positions_value=0.0
+2022-11-11 23:31:35.629016-05:00: Try brokerClient IBinsync port=7496
+2022-11-11 23:31:35.673812-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-11-11 23:31:35.686746-05:00: Connected to IB is successful using port=7496
+2022-11-11 23:31:35.702865-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-11-11 23:31:35.720465-05:00: CASH=305499.98
+2022-11-11 23:31:35.730468-05:00: portfolio_value=305767.64
+2022-11-11 23:31:35.740412-05:00: positions_value=0.0
+2022-11-11 23:32:05.761500-05:00: broker_client_factory.BrokerClient::request_data: EXIT, the following requestRecord failed
+2022-11-11 23:32:05.797897-05:00: {reqId=24699,status=Submitted,reqType=reqPositions,followUp=True,waitForFeedbackInSeconds=30,param={}}

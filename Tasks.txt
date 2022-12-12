@@ -1,0 +1,19 @@
+Tasks to be done asap
+
+- MacD Delta implementation - Done
+- backtest base algo and store data for later (set macdDelta to zero for now)
+- Implement counter - Done
+- generate analysis script which will plot the backtest results in a way that makes it easy to compare tweaks on the algo
+- End of day analysis - include position size and portfolio size on plots
+
+
+Later tasks
+- double
+- get smart about position size
+- implement RSI
+- backtest RSI
+- Unit tests
+- Autologin
+- implement bollinger bands/VWAP
+
+

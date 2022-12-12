@@ -1,0 +1,39 @@
+2022-12-07 08:38:12.394005-05:00: Try brokerClient IB port=7496
+2022-12-07 08:38:12.523643-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-12-07 08:38:12.534622-05:00: Connected to IB is successful using port=7496
+2022-12-07 08:38:12.553580-05:00: IBridgePy version 18.1.7
+2022-12-07 08:38:12.563547-05:00: fileName = UpdatedAlgoCommon.py
+2022-12-07 08:38:13.444816-05:00: ####    Starting to initialize trader    ####
+2022-12-07 08:38:13.457013-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-12-07 08:38:13.468051-05:00: CASH=360090.59
+2022-12-07 08:38:13.478907-05:00: portfolio_value=300097.11
+2022-12-07 08:38:13.490829-05:00: positions_value=60099.93
+2022-12-07 08:38:13.501120-05:00: ##    POSITIONS DU2628075   ##
+2022-12-07 08:38:13.513360-05:00: Symbol Amount Cost_basis
+2022-12-07 08:38:13.524145-05:00: STK,,,SPY,USD -153 393.6743183
+2022-12-07 08:38:13.547927-05:00: ##    NO any order    ##
+2022-12-07 08:38:13.563039-05:00: ####    Initialize trader COMPLETED    ####
+2022-12-07 08:41:47.909461-05:00: Try brokerClient IB port=7496
+2022-12-07 08:41:47.930953-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-12-07 08:41:47.942215-05:00: Connected to IB is successful using port=7496
+2022-12-07 08:41:47.955181-05:00: IBridgePy version 18.1.7
+2022-12-07 08:41:47.966152-05:00: fileName = UpdatedAlgoCommon.py
+2022-12-07 08:42:00.423333-05:00: Try brokerClient IB port=7496
+2022-12-07 08:42:00.481678-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-12-07 08:42:00.495670-05:00: Connected to IB is successful using port=7496
+2022-12-07 08:42:00.510602-05:00: IBridgePy version 18.1.7
+2022-12-07 08:42:00.523121-05:00: fileName = UpdatedAlgoCommon.py
+2022-12-07 08:42:01.428173-05:00: ####    Starting to initialize trader    ####
+2022-12-07 08:42:01.438225-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-12-07 08:42:01.449500-05:00: CASH=360090.59
+2022-12-07 08:42:01.460495-05:00: portfolio_value=300100.17
+2022-12-07 08:42:01.470698-05:00: positions_value=60096.87
+2022-12-07 08:42:01.483315-05:00: ##    POSITIONS DU2628075   ##
+2022-12-07 08:42:01.495926-05:00: Symbol Amount Cost_basis
+2022-12-07 08:42:01.508064-05:00: STK,,,SPY,USD -153 393.6743183
+2022-12-07 08:42:01.521164-05:00: ##    NO any order    ##
+2022-12-07 08:42:01.534491-05:00: ####    Initialize trader COMPLETED    ####
+2022-12-07 10:03:39.760316-05:00: ModifyOrder ibpyOrderId=ib83451 security={STK,,SMART,SPY,USD} order={account=DU2628075 action=BUY orderType=LMT amount=153 tif=DAY orderRef= limitPrice=393.17}
+2022-12-07 10:42:54.252990-05:00: broker_client_factory.CallBacks:errorId=86902 errorCode=399 errorMessage=Order Message: BUY 152 SPY ARCA Warning: Your order was repriced so as not to cross a related resting order.
+2022-12-07 11:08:14.844150-05:00: ModifyOrder ibpyOrderId=ib89114 security={STK,,SMART,SPY,USD} order={account=DU2628075 action=SELL orderType=LMT amount=152 tif=DAY orderRef= limitPrice=394.82}
+2022-12-07 13:48:26.034726-05:00: ModifyOrder ibpyOrderId=ib103125 security={STK,,SMART,SPY,USD} order={account=DU2628075 action=SELL orderType=LMT amount=152 tif=DAY orderRef= limitPrice=393.78}

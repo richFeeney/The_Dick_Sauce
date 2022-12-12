@@ -1,0 +1,8 @@
+key,value
+sys,Windows
+python,Anaconda
+version,38
+bit,64
+
+docker, False
+startup, False

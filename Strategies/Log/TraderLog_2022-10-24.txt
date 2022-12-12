@@ -1,0 +1,4 @@
+2022-10-24 12:33:16.946261-04:00: Try brokerClient IBinsync port=7496
+2022-10-24 12:33:16.990057-04:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-10-24 12:33:17.008063-04:00: Connected to IB is successful using port=7496
+2022-10-24 12:33:17.060714-04:00: ##    ACCOUNT Balance  DU2628075  ##

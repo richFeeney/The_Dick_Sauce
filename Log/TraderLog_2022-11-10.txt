@@ -1,0 +1,19 @@
+2022-11-10 07:32:30.834984-05:00: Try brokerClient IB port=7496
+2022-11-10 07:32:30.914362-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-11-10 07:32:30.933314-05:00: Connected to IB is successful using port=7496
+2022-11-10 07:32:30.954261-05:00: IBridgePy version 18.1.7
+2022-11-10 07:32:30.963218-05:00: fileName = UpdatedAlgoCommon.py
+2022-11-10 07:32:31.824550-05:00: ####    Starting to initialize trader    ####
+2022-11-10 07:32:31.835521-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-11-10 07:32:31.845494-05:00: CASH=515483.32
+2022-11-10 07:32:31.856465-05:00: portfolio_value=318095.85
+2022-11-10 07:32:31.866469-05:00: positions_value=197599.19
+2022-11-10 07:32:31.876412-05:00: ##    POSITIONS DU2628075   ##
+2022-11-10 07:32:31.887382-05:00: Symbol Amount Cost_basis
+2022-11-10 07:32:31.897357-05:00: STK,,,SPY,USD -527 378.65635975
+2022-11-10 07:32:31.908326-05:00: ##    NO any order    ##
+2022-11-10 07:32:31.918300-05:00: ####    Initialize trader COMPLETED    ####
+2022-11-10 10:26:54.403408-05:00: ModifyOrder ibpyOrderId=ib22198 security={STK,,SMART,SPY,USD} order={account=DU2628075 action=SELL orderType=LMT amount=256 tif=DAY orderRef= limitPrice=389.55}
+2022-11-10 12:15:55.417154-05:00: ModifyOrder ibpyOrderId=ib22861 security={STK,,SMART,SPY,USD} order={account=DU2628075 action=BUY orderType=LMT amount=255 tif=DAY orderRef= limitPrice=391.165}
+2022-11-10 12:15:56.458889-05:00: broker_client_factory.CallBacks::error:errorId=22861 errorCode=110 errorMessage=The price does not conform to the minimum price variation for this contract.
+2022-11-10 12:15:56.470856-05:00: broker_client_factory.CallBacks::_print_version:IBridgePy version= 18.1.7

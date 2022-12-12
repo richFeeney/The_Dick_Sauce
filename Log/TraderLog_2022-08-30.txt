@@ -1,0 +1,12 @@
+2022-08-30 21:58:21.431101-04:00: Try brokerClient IBinsync port=7496
+2022-08-30 21:58:21.475009-04:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-08-30 21:58:21.476006-04:00: Connected to IB is successful using port=7496
+2022-08-30 21:58:21.478001-04:00: ##    ACCOUNT Balance  DU1868499  ##
+2022-08-30 21:58:21.502964-04:00: broker_client_factory.CallBacks::error:errorId=2147483647 errorCode=321 errorMessage=Error validating request.-'bq' : cause - Invalid account code 'DU1868499'.
+2022-08-30 21:58:21.503932-04:00: broker_client_factory.CallBacks::_print_version:IBridgePy version= 18.1.7
+2022-08-30 21:58:42.595658-04:00: Try brokerClient IBinsync port=7496
+2022-08-30 21:58:42.608599-04:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-08-30 21:58:42.609596-04:00: Connected to IB is successful using port=7496
+2022-08-30 21:58:42.609596-04:00: ##    ACCOUNT Balance  DU2883069  ##
+2022-08-30 21:59:12.611398-04:00: broker_client_factory.BrokerClient::request_data: EXIT, the following requestRecord failed
+2022-08-30 21:59:12.611398-04:00: {reqId=0,status=Submitted,reqType=reqAccountUpdates,followUp=True,waitForFeedbackInSeconds=30,param={subscribe:True,accountCode:DU2883069,}}
