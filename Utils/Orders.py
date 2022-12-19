@@ -33,57 +33,60 @@ def generateSellOrder(context,data,price,ema):
     """ This function places the orders.
     Conditions for buying order: We decided to place an order (exit_flag ==true), and 
     havent yet placed the order (exit order==None)"""
-    # pdb.set_trace()
-    if context.exit_flag and context.exit_order is None: # Order has not been placed yet
-        context.exit_order = data.parentTrader.order(context.security, -context.positionSize, LimitOrder(np.round(price.mid,2)), accountCode='default')
-        context.exit_time = context.sTime # Save order time for future reference
-    else: # Order has been placed
-        if checkFillstatus(context,data): # Order has been filled
-            context.exit_order = None # reset flags
-            context.exit_flag = False
-            Utils.flag_reset(context)
-            Utils.doLogging(context,data,ema,price)
-            context.shares=0
-        else: # Order has not been filled
-            print("Modifying Price")
-            modifyOrder(context, data, price) # modify order to determine whether or not to lower the price
+    # Place order and record time
+    context.exit_order = data.parentTrader.order(context.security, -context.positionSize, LimitOrder(np.round(price.mid,2)), accountCode='default')
+    context.exit_time = context.sTime # Save order time for future reference
+    
+    # wait for order to be filled, if time takes too long, modify price
+    # while checkFillstatus(context,data)==False: # Order hasn't been filled
+    #     time.sleep(1)
+    #     if context.exit_time.timestamp()-context.sTime.timestamp()>10:
+    #         print("Modifying Price")
+    #         modifyOrder(context, data, price) # modify order to determine whether or not to lower the price
+    
+    # reset flags
+    Utils.flag_reset(context)
+    Utils.doLogging(context,data,ema,price)
+    context.shares=0
+
+
 
 def generateBuyOrder(context,data,price,ema):
     """ This function places the orders. 
     Conditions for buying order: We decided to place an order (enter_flag ==true), and 
     havent yet placed the order (entry_flag==false)"""
-    # pdb.set_trace()
-    # check to see if a flag was set to place an order, and we dont currently have open orders
-    if context.enter_flag and not context.entry_flag: 
-        context.entry_price = price.mid
+
+    context.entry_time = context.sTime  # record time of entry    
+   
+   # calculate number of shares to buy
+    if context.shortBool or context.short_flag: 
+        shares = -np.round((0.2*context.portfolio.portfolio_value/price.mid))
+    else:
+        shares = np.round((0.2*context.portfolio.portfolio_value/price.mid))
+    
+    # record number of shares in position
+    context.shares = context.shares+shares 
+
+    # place the order
+    context.order = data.parentTrader.order(context.security, shares, LimitOrder(np.round(price.mid,2)),
+                            accountCode='default')
+                            
+    
+    # if Order is filled, set appropriate flags
+    # while data.parentTrader.get_order_status(context.order) not in [OrderStatus.FILLED]:
+    #     print(data.parentTrader.get_order_status(context.order))
+    #     time.sleep(1)
         
-        # calculate number of shares to buy/short (TODO: write a smarter function)
-        if context.shortBool: 
-            shares = -np.round((0.2*context.portfolio.portfolio_value/price.mid))
-        else:
-            shares = np.round((0.2*context.portfolio.portfolio_value/price.mid))
-        
-        context.shares = context.shares+shares
-
-        # place the order
-        context.order = data.parentTrader.order(context.security, shares, LimitOrder(np.round(price.mid,2)),
-                                accountCode='default')
-                                
-        context.double_flag =  False # set flag to false after placing order to avoid multiple erroneous orders
-
-        # if Order is filled, set appropriate flags
-        if data.parentTrader.get_order_status(context.order) in [OrderStatus.FILLED, OrderStatus.PRESUBMITTED,
-                                                OrderStatus.SUBMITTED]:
-            context.entry_time = context.sTime 
-            
-            if context.shortBool:
-                context.short_flag = True   
-            else:
-                context.long_flag=True
-            
-            context.entry_flag =  True           
-            context.longBool =    False
-            context.shortBool =   False
-            context.enter_flag =  False
-
-            Utils.doLogging(context,data,ema,price)
+    # Set flag to determine which type of position we hold
+    if context.shortBool:
+        context.short_flag = True   
+    else:
+        context.long_flag=True
+    
+    # Reset flags and update log
+    context.entry_flag =  True           
+    context.longBool =    False
+    context.shortBool =   False
+    context.enter_flag =  False
+    context.double_flag =  False 
+    Utils.doLogging(context,data,ema,price)

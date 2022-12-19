@@ -1,0 +1,13 @@
+2022-12-16 08:04:47.684647-05:00: Try brokerClient IB port=7496
+2022-12-16 08:04:47.727921-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-12-16 08:04:47.728925-05:00: Connected to IB is successful using port=7496
+2022-12-16 08:04:47.730914-05:00: IBridgePy version 18.1.7
+2022-12-16 08:04:47.730914-05:00: fileName = UpdatedAlgoCommon.py
+2022-12-16 08:04:48.794041-05:00: ####    Starting to initialize trader    ####
+2022-12-16 08:04:48.794041-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-12-16 08:04:48.794041-05:00: CASH=293585.62
+2022-12-16 08:04:48.796036-05:00: portfolio_value=293931.74
+2022-12-16 08:04:48.796036-05:00: positions_value=0.0
+2022-12-16 08:04:48.796036-05:00: ##    NO ANY POSITION    ##
+2022-12-16 08:04:48.797062-05:00: ##    NO any order    ##
+2022-12-16 08:04:48.797062-05:00: ####    Initialize trader COMPLETED    ####

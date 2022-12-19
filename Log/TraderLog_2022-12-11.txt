@@ -218,4 +218,62 @@ Deduct commission=1.0
 Deduct commission=1.0
 Deduct commission=1.0
 Deduct commission=1.0
+Deduct commission=1.0Try brokerClient IB port=7496
+port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+Connected to IB is successful using port=7496
+####     Data ingestion starts    ####
+ingested hist of security=STK,,,SPY,USD barSize=1 min from IB
+1st line=2022-11-28 14:30:00-05:00
+last line=2022-12-09 20:59:00-05:00
+####     Data ingestion COMPLETED    ####
+IBridgePy version 18.1.7
+fileName = UpdatedAlgoCommon.py
+Cannot find ingested hist for security=STK,SPY,USD endTime=20221201 23:10:00 UTC goBack=31300 S barSize=5 mins
+IBridgePy has to request historical data from broker IB to continue backtesting but it will be slow. Recommend to add HistIngestPlan in TEST_ME.py
+####    Starting to initialize trader    ####
+##    ACCOUNT Balance  DU2628075  ##
+CASH=100000.0
+portfolio_value=100000.0
+positions_value=0.0
+##    NO ANY POSITION    ##
+##    NO any order    ##
+####    Initialize trader COMPLETED    ####
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
 Deduct commission=1.0

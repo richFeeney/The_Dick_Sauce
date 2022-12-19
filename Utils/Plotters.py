@@ -14,7 +14,7 @@ import pytz
 import sys
 import time
 
-sys.path.append(r'D:\algo2\IBridgePy_Win_Anaconda38_64 - Copy')
+sys.path.append(r'C:\algo2')
 from Utils import Utils
 
 
@@ -162,7 +162,8 @@ def plotDailyCandleStickMacd(priceData,
     ax.grid(which='major')
     ax.grid(which='minor', linewidth=0.25)
     ax.minorticks_on()
-    ax.set_ylim(np.min([np.min(up.low),np.min(down.low)])-.05,np.max([np.max(up.high),np.max(down.high)])+.05)
+    if len(up!=0):
+        ax.set_ylim(np.min([np.min(up.low),np.min(down.low)])-.05,np.max([np.max(up.high),np.max(down.high)])+.05)
 
     ax1.grid(which='major')
     ax1.grid(which='minor', linewidth=0.25)

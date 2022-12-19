@@ -1,0 +1,1174 @@
+Try brokerClient IB port=7496
+port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+Connected to IB is successful using port=7496
+####     Data ingestion starts    ####
+ingested hist of security=STK,,,SPY,USD barSize=1 min from IB
+1st line=2022-12-13 14:30:00-05:00
+last line=2022-12-16 20:59:00-05:00
+####     Data ingestion COMPLETED    ####
+IBridgePy version 18.1.7
+fileName = UpdatedAlgoCommon.py
+Cannot find ingested hist for security=STK,SPY,USD endTime=20221217 13:51:00 UTC goBack=31300 S barSize=5 mins
+IBridgePy has to request historical data from broker IB to continue backtesting but it will be slow. Recommend to add HistIngestPlan in TEST_ME.py
+####    Starting to initialize trader    ####
+##    ACCOUNT Balance  DU2628075  ##
+CASH=100000.0
+portfolio_value=100000.0
+positions_value=0.0
+##    NO ANY POSITION    ##
+##    NO any order    ##
+####    Initialize trader COMPLETED    ####Try brokerClient IB port=7496
+port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+Connected to IB is successful using port=7496
+####     Data ingestion starts    ####
+ingested hist of security=STK,,,SPY,USD barSize=1 min from IB
+1st line=2022-12-13 14:30:00-05:00
+last line=2022-12-16 20:59:00-05:00
+####     Data ingestion COMPLETED    ####
+IBridgePy version 18.1.7
+fileName = UpdatedAlgoCommon.py
+Cannot find ingested hist for security=STK,SPY,USD endTime=20221216 13:52:00 UTC goBack=31300 S barSize=5 mins
+IBridgePy has to request historical data from broker IB to continue backtesting but it will be slow. Recommend to add HistIngestPlan in TEST_ME.py
+####    Starting to initialize trader    ####
+##    ACCOUNT Balance  DU2628075  ##
+CASH=100000.0
+portfolio_value=100000.0
+positions_value=0.0
+##    NO ANY POSITION    ##
+##    NO any order    ##
+####    Initialize trader COMPLETED    ####
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.02022-12-18 11:02:18.949878-05:00: Try brokerClient IBinsync port=7496
+2022-12-18 11:02:18.962810-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-12-18 11:02:18.963784-05:00: Connected to IB is successful using port=7496
+2022-12-18 11:02:18.965779-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-12-18 11:02:19.009662-05:00: CASH=293703.12
+2022-12-18 11:02:19.010660-05:00: portfolio_value=294049.24
+2022-12-18 11:02:19.010660-05:00: positions_value=0.0
+2022-12-18 11:02:19.014649-05:00: ##    NO ANY POSITION    ##
+2022-12-18 11:02:19.015646-05:00: ##    NO any order    ##
+2022-12-18 11:02:29.898907-05:00: Try brokerClient IBinsync port=7496
+2022-12-18 11:02:29.911552-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-12-18 11:02:29.911552-05:00: Connected to IB is successful using port=7496
+2022-12-18 11:02:29.912554-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-12-18 11:02:48.674517-05:00: Try brokerClient IBinsync port=7496
+2022-12-18 11:02:48.686486-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-12-18 11:02:48.689477-05:00: Connected to IB is successful using port=7496
+2022-12-18 11:02:48.692499-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-12-18 11:02:48.725381-05:00: CASH=293703.12
+2022-12-18 11:02:48.726379-05:00: portfolio_value=294049.24
+2022-12-18 11:02:48.726379-05:00: positions_value=0.0
+2022-12-18 11:02:48.727376-05:00: ##    NO ANY POSITION    ##
+2022-12-18 11:02:48.728374-05:00: ##    NO any order    ##
+Try brokerClient IB port=7496
+port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+Connected to IB is successful using port=7496
+####     Data ingestion starts    ####
+ingested hist of security=STK,,,SPY,USD barSize=1 min from IB
+1st line=2022-12-13 14:30:00-05:00
+last line=2022-12-16 20:59:00-05:00
+####     Data ingestion COMPLETED    ####
+IBridgePy version 18.1.7
+fileName = UpdatedAlgoCommon.py
+Cannot find ingested hist for security=STK,SPY,USD endTime=20221216 15:35:00 UTC goBack=31300 S barSize=5 mins
+IBridgePy has to request historical data from broker IB to continue backtesting but it will be slow. Recommend to add HistIngestPlan in TEST_ME.py
+####    Starting to initialize trader    ####
+##    ACCOUNT Balance  DU2628075  ##
+CASH=100000.0
+portfolio_value=100000.0
+positions_value=0.0
+##    NO ANY POSITION    ##
+##    NO any order    ##
+####    Initialize trader COMPLETED    ####
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.02022-12-18 12:38:26.076604-05:00: Try brokerClient IBinsync port=7496
+2022-12-18 12:38:26.089842-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-12-18 12:38:26.091868-05:00: Connected to IB is successful using port=7496
+2022-12-18 12:38:26.095856-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-12-18 12:38:26.128739-05:00: CASH=293703.12
+2022-12-18 12:38:26.129736-05:00: portfolio_value=294049.24
+2022-12-18 12:38:26.129736-05:00: positions_value=0.0
+2022-12-18 12:38:26.130734-05:00: ##    NO ANY POSITION    ##
+2022-12-18 12:38:26.131731-05:00: ##    NO any order    ##
+Try brokerClient IB port=7496
+port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+Connected to IB is successful using port=7496
+####     Data ingestion starts    ####
+ingested hist of security=STK,,,SPY,USD barSize=1 min from IB
+1st line=2022-12-13 14:30:00-05:00
+last line=2022-12-16 20:59:00-05:00
+####     Data ingestion COMPLETED    ####
+IBridgePy version 18.1.7
+fileName = UpdatedAlgoCommon.py
+Cannot find ingested hist for security=STK,SPY,USD endTime=20221216 15:43:00 UTC goBack=31300 S barSize=5 mins
+IBridgePy has to request historical data from broker IB to continue backtesting but it will be slow. Recommend to add HistIngestPlan in TEST_ME.py
+####    Starting to initialize trader    ####
+##    ACCOUNT Balance  DU2628075  ##
+CASH=100000.0
+portfolio_value=100000.0
+positions_value=0.0
+##    NO ANY POSITION    ##
+##    NO any order    ##
+####    Initialize trader COMPLETED    ####
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.02022-12-18 12:47:37.393794-05:00: Try brokerClient IBinsync port=7496
+2022-12-18 12:47:37.406729-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-12-18 12:47:37.409721-05:00: Connected to IB is successful using port=7496
+2022-12-18 12:47:37.413711-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-12-18 12:47:37.445625-05:00: CASH=293703.12
+2022-12-18 12:47:37.445625-05:00: portfolio_value=294049.24
+2022-12-18 12:47:37.445625-05:00: positions_value=0.0
+2022-12-18 12:47:37.446623-05:00: ##    NO ANY POSITION    ##
+2022-12-18 12:47:37.447620-05:00: ##    NO any order    ##
+Try brokerClient IB port=7496
+port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+Connected to IB is successful using port=7496
+####     Data ingestion starts    ####
+ingested hist of security=STK,,,SPY,USD barSize=1 min from IB
+1st line=2022-12-13 14:30:00-05:00
+last line=2022-12-16 20:59:00-05:00
+####     Data ingestion COMPLETED    ####
+IBridgePy version 18.1.7
+fileName = UpdatedAlgoCommon.py
+Cannot find ingested hist for security=STK,SPY,USD endTime=20221216 15:52:00 UTC goBack=31300 S barSize=5 mins
+IBridgePy has to request historical data from broker IB to continue backtesting but it will be slow. Recommend to add HistIngestPlan in TEST_ME.py
+####    Starting to initialize trader    ####
+##    ACCOUNT Balance  DU2628075  ##
+CASH=100000.0
+portfolio_value=100000.0
+positions_value=0.0
+##    NO ANY POSITION    ##
+##    NO any order    ##
+####    Initialize trader COMPLETED    ####
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.02022-12-18 14:07:47.127967-05:00: Try brokerClient IBinsync port=7496
+2022-12-18 14:07:47.140916-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-12-18 14:07:47.143908-05:00: Connected to IB is successful using port=7496
+2022-12-18 14:07:47.147897-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-12-18 14:07:47.180809-05:00: CASH=293703.12
+2022-12-18 14:07:47.180809-05:00: portfolio_value=294049.24
+2022-12-18 14:07:47.180809-05:00: positions_value=0.0
+2022-12-18 14:07:47.182804-05:00: ##    NO ANY POSITION    ##
+2022-12-18 14:07:47.183801-05:00: ##    NO any order    ##
+Try brokerClient IB port=7496
+port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+Connected to IB is successful using port=7496
+####     Data ingestion starts    ####
+ingested hist of security=STK,,,SPY,USD barSize=1 min from IB
+1st line=2022-12-13 14:30:00-05:00
+last line=2022-12-16 20:59:00-05:00
+####     Data ingestion COMPLETED    ####
+IBridgePy version 18.1.7
+fileName = UpdatedAlgoCommon.py
+Cannot find ingested hist for security=STK,SPY,USD endTime=20221216 17:09:00 UTC goBack=31300 S barSize=5 mins
+IBridgePy has to request historical data from broker IB to continue backtesting but it will be slow. Recommend to add HistIngestPlan in TEST_ME.py
+####    Starting to initialize trader    ####
+##    ACCOUNT Balance  DU2628075  ##
+CASH=100000.0
+portfolio_value=100000.0
+positions_value=0.0
+##    NO ANY POSITION    ##
+##    NO any order    ##
+####    Initialize trader COMPLETED    ####
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.02022-12-18 14:12:52.457676-05:00: Try brokerClient IBinsync port=7496
+2022-12-18 14:12:52.469613-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-12-18 14:12:52.471607-05:00: Connected to IB is successful using port=7496
+2022-12-18 14:12:52.476594-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-12-18 14:12:52.507511-05:00: CASH=293703.12
+2022-12-18 14:12:52.507511-05:00: portfolio_value=294049.24
+2022-12-18 14:12:52.508508-05:00: positions_value=0.0
+2022-12-18 14:12:52.509506-05:00: ##    NO ANY POSITION    ##
+2022-12-18 14:12:52.510503-05:00: ##    NO any order    ##
+2022-12-18 14:17:44.792348-05:00: Try brokerClient IBinsync port=7496
+2022-12-18 14:17:44.803903-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-12-18 14:17:44.806897-05:00: Connected to IB is successful using port=7496
+2022-12-18 14:17:44.810886-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-12-18 14:17:44.840806-05:00: CASH=293703.12
+2022-12-18 14:17:44.841833-05:00: portfolio_value=294049.24
+2022-12-18 14:17:44.841833-05:00: positions_value=0.0
+2022-12-18 14:17:44.842801-05:00: ##    NO ANY POSITION    ##
+2022-12-18 14:17:44.843798-05:00: ##    NO any order    ##
+2022-12-18 14:19:08.815761-05:00: Try brokerClient IBinsync port=7496
+2022-12-18 14:19:08.828758-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-12-18 14:19:08.829812-05:00: Connected to IB is successful using port=7496
+2022-12-18 14:19:08.830779-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-12-18 14:19:08.831784-05:00: broker_service_factory.BrokerService_IB_insync::_get_account_info_one_tag: EXIT, no value based on accountCode=DU2628075 tag=TotalCashValue
+2022-12-18 14:19:24.480898-05:00: Try brokerClient IBinsync port=7496
+2022-12-18 14:19:24.492512-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-12-18 14:19:24.495532-05:00: Connected to IB is successful using port=7496
+2022-12-18 14:19:24.499522-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-12-18 14:19:24.530410-05:00: CASH=293703.12
+2022-12-18 14:19:24.531408-05:00: portfolio_value=294049.24
+2022-12-18 14:19:24.531408-05:00: positions_value=0.0
+2022-12-18 14:19:24.533402-05:00: ##    NO ANY POSITION    ##
+2022-12-18 14:19:24.533402-05:00: ##    NO any order    ##
+Try brokerClient IB port=7496
+port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+Connected to IB is successful using port=7496
+####     Data ingestion starts    ####
+ingested hist of security=STK,,,SPY,USD barSize=1 min from IB
+1st line=2022-12-13 14:30:00-05:00
+last line=2022-12-16 20:59:00-05:00
+####     Data ingestion COMPLETED    ####
+IBridgePy version 18.1.7
+fileName = UpdatedAlgoCommon.py
+Cannot find ingested hist for security=STK,SPY,USD endTime=20221215 17:20:00 UTC goBack=31300 S barSize=5 mins
+IBridgePy has to request historical data from broker IB to continue backtesting but it will be slow. Recommend to add HistIngestPlan in TEST_ME.py
+####    Starting to initialize trader    ####
+##    ACCOUNT Balance  DU2628075  ##
+CASH=100000.0
+portfolio_value=100000.0
+positions_value=0.0
+##    NO ANY POSITION    ##
+##    NO any order    ##
+####    Initialize trader COMPLETED    ####
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.02022-12-18 14:25:28.430615-05:00: Try brokerClient IBinsync port=7496
+2022-12-18 14:25:28.443523-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-12-18 14:25:28.446543-05:00: Connected to IB is successful using port=7496
+2022-12-18 14:25:28.451502-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-12-18 14:25:28.481423-05:00: CASH=293703.12
+2022-12-18 14:25:28.481423-05:00: portfolio_value=294049.24
+2022-12-18 14:25:28.482420-05:00: positions_value=0.0
+2022-12-18 14:25:28.483417-05:00: ##    NO ANY POSITION    ##
+2022-12-18 14:25:28.484415-05:00: ##    NO any order    ##
+Try brokerClient IB port=7496
+port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+Connected to IB is successful using port=7496
+####     Data ingestion starts    ####
+ingested hist of security=STK,,,SPY,USD barSize=1 min from IB
+1st line=2022-12-13 14:30:00-05:00
+last line=2022-12-16 20:59:00-05:00
+####     Data ingestion COMPLETED    ####
+IBridgePy version 18.1.7
+fileName = UpdatedAlgoCommon.py
+Cannot find ingested hist for security=STK,SPY,USD endTime=20221215 17:29:00 UTC goBack=31300 S barSize=5 mins
+IBridgePy has to request historical data from broker IB to continue backtesting but it will be slow. Recommend to add HistIngestPlan in TEST_ME.py
+####    Starting to initialize trader    ####
+##    ACCOUNT Balance  DU2628075  ##
+CASH=100000.0
+portfolio_value=100000.0
+positions_value=0.0
+##    NO ANY POSITION    ##
+##    NO any order    ##
+####    Initialize trader COMPLETED    ####
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.02022-12-18 14:33:51.648947-05:00: Try brokerClient IBinsync port=7496
+2022-12-18 14:33:51.662910-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-12-18 14:33:51.666899-05:00: Connected to IB is successful using port=7496
+2022-12-18 14:33:51.670889-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-12-18 14:33:51.706792-05:00: CASH=293703.12
+2022-12-18 14:33:51.706792-05:00: portfolio_value=294049.24
+2022-12-18 14:33:51.707791-05:00: positions_value=0.0
+2022-12-18 14:33:51.708788-05:00: ##    NO ANY POSITION    ##
+2022-12-18 14:33:51.709785-05:00: ##    NO any order    ##
+2022-12-18 14:34:05.039887-05:00: Try brokerClient IBinsync port=7496
+2022-12-18 14:34:05.052852-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-12-18 14:34:05.054847-05:00: Connected to IB is successful using port=7496
+2022-12-18 14:34:05.057839-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-12-18 14:34:33.304497-05:00: Try brokerClient IBinsync port=7496
+2022-12-18 14:34:33.316437-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-12-18 14:34:33.319430-05:00: Connected to IB is successful using port=7496
+2022-12-18 14:34:33.323418-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-12-18 14:34:33.354336-05:00: CASH=293703.12
+2022-12-18 14:34:33.355334-05:00: portfolio_value=294049.24
+2022-12-18 14:34:33.355334-05:00: positions_value=0.0
+2022-12-18 14:34:33.356331-05:00: ##    NO ANY POSITION    ##
+2022-12-18 14:34:33.357328-05:00: ##    NO any order    ##
+2022-12-18 14:35:40.400547-05:00: Try brokerClient IBinsync port=7496
+2022-12-18 14:35:40.414509-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-12-18 14:35:40.414509-05:00: Connected to IB is successful using port=7496
+2022-12-18 14:35:40.415508-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-12-18 14:35:51.197232-05:00: Try brokerClient IBinsync port=7496
+2022-12-18 14:35:51.209169-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-12-18 14:35:51.212181-05:00: Connected to IB is successful using port=7496
+2022-12-18 14:35:51.217146-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-12-18 14:35:51.250058-05:00: CASH=293703.12
+2022-12-18 14:35:51.251056-05:00: portfolio_value=294049.24
+2022-12-18 14:35:51.251056-05:00: positions_value=0.0
+2022-12-18 14:35:51.252054-05:00: ##    NO ANY POSITION    ##
+2022-12-18 14:35:51.253051-05:00: ##    NO any order    ##
+Try brokerClient IB port=7496
+port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+Connected to IB is successful using port=7496
+####     Data ingestion starts    ####
+ingested hist of security=STK,,,SPY,USD barSize=1 min from IB
+1st line=2022-12-13 14:30:00-05:00
+last line=2022-12-16 20:59:00-05:00
+####     Data ingestion COMPLETED    ####
+IBridgePy version 18.1.7
+fileName = UpdatedAlgoCommon.py
+Cannot find ingested hist for security=STK,SPY,USD endTime=20221215 17:36:00 UTC goBack=31300 S barSize=5 mins
+IBridgePy has to request historical data from broker IB to continue backtesting but it will be slow. Recommend to add HistIngestPlan in TEST_ME.py
+####    Starting to initialize trader    ####
+##    ACCOUNT Balance  DU2628075  ##
+CASH=100000.0
+portfolio_value=100000.0
+positions_value=0.0
+##    NO ANY POSITION    ##
+##    NO any order    ##
+####    Initialize trader COMPLETED    ####Try brokerClient IB port=7496
+port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+Connected to IB is successful using port=7496
+####     Data ingestion starts    ####
+ingested hist of security=STK,,,SPY,USD barSize=1 min from IB
+1st line=2022-12-13 14:30:00-05:00
+last line=2022-12-16 20:59:00-05:00
+####     Data ingestion COMPLETED    ####
+IBridgePy version 18.1.7
+fileName = UpdatedAlgoCommon.py
+Cannot find ingested hist for security=STK,SPY,USD endTime=20221214 17:37:00 UTC goBack=31300 S barSize=5 mins
+IBridgePy has to request historical data from broker IB to continue backtesting but it will be slow. Recommend to add HistIngestPlan in TEST_ME.py
+####    Starting to initialize trader    ####
+##    ACCOUNT Balance  DU2628075  ##
+CASH=100000.0
+portfolio_value=100000.0
+positions_value=0.0
+##    NO ANY POSITION    ##
+##    NO any order    ##
+####    Initialize trader COMPLETED    ####
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0Try brokerClient IB port=7496
+port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+Connected to IB is successful using port=7496
+####     Data ingestion starts    ####
+ingested hist of security=STK,,,SPY,USD barSize=1 min from IB
+1st line=2022-12-12 14:30:00-05:00
+last line=2022-12-16 20:59:00-05:00
+####     Data ingestion COMPLETED    ####
+IBridgePy version 18.1.7
+fileName = UpdatedAlgoCommon.py
+Cannot find ingested hist for security=STK,SPY,USD endTime=20221214 14:30:00 UTC goBack=31300 S barSize=5 mins
+IBridgePy has to request historical data from broker IB to continue backtesting but it will be slow. Recommend to add HistIngestPlan in TEST_ME.py
+####    Starting to initialize trader    ####
+##    ACCOUNT Balance  DU2628075  ##
+CASH=100000.0
+portfolio_value=100000.0
+positions_value=0.0
+##    NO ANY POSITION    ##
+##    NO any order    ##
+####    Initialize trader COMPLETED    ####
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.02022-12-18 14:46:18.782484-05:00: Try brokerClient IBinsync port=7496
+2022-12-18 14:46:18.795423-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-12-18 14:46:18.797445-05:00: Connected to IB is successful using port=7496
+2022-12-18 14:46:18.801405-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-12-18 14:46:18.836342-05:00: CASH=293703.12
+2022-12-18 14:46:18.836342-05:00: portfolio_value=294049.24
+2022-12-18 14:46:18.837311-05:00: positions_value=0.0
+2022-12-18 14:46:18.838307-05:00: ##    NO ANY POSITION    ##
+2022-12-18 14:46:18.839304-05:00: ##    NO any order    ##
+Try brokerClient IB port=7496
+port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+Connected to IB is successful using port=7496
+####     Data ingestion starts    ####
+ingested hist of security=STK,,,SPY,USD barSize=1 min from IB
+1st line=2022-12-12 14:30:00-05:00
+last line=2022-12-16 20:59:00-05:00
+####     Data ingestion COMPLETED    ####
+IBridgePy version 18.1.7
+fileName = UpdatedAlgoCommon.py
+Cannot find ingested hist for security=STK,SPY,USD endTime=20221214 14:30:00 UTC goBack=31300 S barSize=5 mins
+IBridgePy has to request historical data from broker IB to continue backtesting but it will be slow. Recommend to add HistIngestPlan in TEST_ME.py
+####    Starting to initialize trader    ####
+##    ACCOUNT Balance  DU2628075  ##
+CASH=100000.0
+portfolio_value=100000.0
+positions_value=0.0
+##    NO ANY POSITION    ##
+##    NO any order    ##
+####    Initialize trader COMPLETED    ####
+Deduct commission=1.0
+Deduct commission=1.02022-12-18 15:03:40.955454-05:00: Try brokerClient IBinsync port=7496
+2022-12-18 15:03:40.967811-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-12-18 15:03:40.970831-05:00: Connected to IB is successful using port=7496
+2022-12-18 15:03:40.971828-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-12-18 15:03:41.008700-05:00: CASH=293703.12
+2022-12-18 15:03:41.009698-05:00: portfolio_value=294049.24
+2022-12-18 15:03:41.009698-05:00: positions_value=0.0
+2022-12-18 15:03:41.010695-05:00: ##    NO ANY POSITION    ##
+2022-12-18 15:03:41.011693-05:00: ##    NO any order    ##
+Try brokerClient IB port=7496
+port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+Connected to IB is successful using port=7496
+####     Data ingestion starts    ####
+ingested hist of security=STK,,,SPY,USD barSize=1 min from IB
+1st line=2022-12-12 14:30:00-05:00
+last line=2022-12-16 20:59:00-05:00
+####     Data ingestion COMPLETED    ####
+IBridgePy version 18.1.7
+fileName = UpdatedAlgoCommon.py
+Cannot find ingested hist for security=STK,SPY,USD endTime=20221214 14:30:00 UTC goBack=31300 S barSize=5 mins
+IBridgePy has to request historical data from broker IB to continue backtesting but it will be slow. Recommend to add HistIngestPlan in TEST_ME.py
+####    Starting to initialize trader    ####
+##    ACCOUNT Balance  DU2628075  ##
+CASH=100000.0
+portfolio_value=100000.0
+positions_value=0.0
+##    NO ANY POSITION    ##
+##    NO any order    ##
+####    Initialize trader COMPLETED    ####
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.02022-12-18 15:16:44.847041-05:00: Try brokerClient IBinsync port=7496
+2022-12-18 15:16:44.859054-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-12-18 15:16:44.862025-05:00: Connected to IB is successful using port=7496
+2022-12-18 15:16:44.866014-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-12-18 15:16:44.899924-05:00: CASH=293703.12
+2022-12-18 15:16:44.899924-05:00: portfolio_value=294049.24
+2022-12-18 15:16:44.900921-05:00: positions_value=0.0
+2022-12-18 15:16:44.901919-05:00: ##    NO ANY POSITION    ##
+2022-12-18 15:16:44.902916-05:00: ##    NO any order    ##
+Try brokerClient IB port=7496
+port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+Connected to IB is successful using port=7496
+####     Data ingestion starts    ####
+ingested hist of security=STK,,,SPY,USD barSize=1 min from IB
+1st line=2022-12-12 14:30:00-05:00
+last line=2022-12-16 20:59:00-05:00
+####     Data ingestion COMPLETED    ####
+IBridgePy version 18.1.7
+fileName = UpdatedAlgoCommon.py
+Cannot find ingested hist for security=STK,SPY,USD endTime=20221214 14:30:00 UTC goBack=31300 S barSize=5 mins
+IBridgePy has to request historical data from broker IB to continue backtesting but it will be slow. Recommend to add HistIngestPlan in TEST_ME.py
+####    Starting to initialize trader    ####
+##    ACCOUNT Balance  DU2628075  ##
+CASH=100000.0
+portfolio_value=100000.0
+positions_value=0.0
+##    NO ANY POSITION    ##
+##    NO any order    ##
+####    Initialize trader COMPLETED    ####
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.02022-12-18 15:22:18.789767-05:00: Try brokerClient IBinsync port=7496
+2022-12-18 15:22:18.801730-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-12-18 15:22:18.804709-05:00: Connected to IB is successful using port=7496
+2022-12-18 15:22:18.808699-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-12-18 15:22:18.842608-05:00: CASH=293703.12
+2022-12-18 15:22:18.842608-05:00: portfolio_value=294049.24
+2022-12-18 15:22:18.843606-05:00: positions_value=0.0
+2022-12-18 15:22:18.844602-05:00: ##    NO ANY POSITION    ##
+2022-12-18 15:22:18.845599-05:00: ##    NO any order    ##
+Try brokerClient IB port=7496
+port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+Connected to IB is successful using port=7496
+####     Data ingestion starts    ####
+ingested hist of security=STK,,,SPY,USD barSize=1 min from IB
+1st line=2022-12-12 14:30:00-05:00
+last line=2022-12-16 20:59:00-05:00
+####     Data ingestion COMPLETED    ####
+IBridgePy version 18.1.7
+fileName = UpdatedAlgoCommon.py
+Cannot find ingested hist for security=STK,SPY,USD endTime=20221214 14:30:00 UTC goBack=31300 S barSize=5 mins
+IBridgePy has to request historical data from broker IB to continue backtesting but it will be slow. Recommend to add HistIngestPlan in TEST_ME.py
+####    Starting to initialize trader    ####
+##    ACCOUNT Balance  DU2628075  ##
+CASH=100000.0
+portfolio_value=100000.0
+positions_value=0.0
+##    NO ANY POSITION    ##
+##    NO any order    ##
+####    Initialize trader COMPLETED    ####
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.02022-12-18 15:29:25.499449-05:00: Try brokerClient IBinsync port=7496
+2022-12-18 15:29:25.511699-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-12-18 15:29:25.514690-05:00: Connected to IB is successful using port=7496
+2022-12-18 15:29:25.518679-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-12-18 15:29:25.553586-05:00: CASH=293703.12
+2022-12-18 15:29:25.553586-05:00: portfolio_value=294049.24
+2022-12-18 15:29:25.553586-05:00: positions_value=0.0
+2022-12-18 15:29:25.554610-05:00: ##    NO ANY POSITION    ##
+2022-12-18 15:29:25.555582-05:00: ##    NO any order    ##
+Try brokerClient IB port=7496
+port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+Connected to IB is successful using port=7496
+####     Data ingestion starts    ####
+ingested hist of security=STK,,,SPY,USD barSize=1 min from IB
+1st line=2022-12-12 14:30:00-05:00
+last line=2022-12-16 20:59:00-05:00
+####     Data ingestion COMPLETED    ####
+IBridgePy version 18.1.7
+fileName = UpdatedAlgoCommon.py
+Cannot find ingested hist for security=STK,SPY,USD endTime=20221214 14:30:00 UTC goBack=31300 S barSize=5 mins
+IBridgePy has to request historical data from broker IB to continue backtesting but it will be slow. Recommend to add HistIngestPlan in TEST_ME.py
+####    Starting to initialize trader    ####
+##    ACCOUNT Balance  DU2628075  ##
+CASH=100000.0
+portfolio_value=100000.0
+positions_value=0.0
+##    NO ANY POSITION    ##
+##    NO any order    ##
+####    Initialize trader COMPLETED    ####
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.02022-12-18 15:39:27.647230-05:00: Try brokerClient IBinsync port=7496
+2022-12-18 15:39:27.661192-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-12-18 15:39:27.663216-05:00: Connected to IB is successful using port=7496
+2022-12-18 15:39:27.665184-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-12-18 15:39:27.703080-05:00: CASH=293703.12
+2022-12-18 15:39:27.703080-05:00: portfolio_value=294049.24
+2022-12-18 15:39:27.704079-05:00: positions_value=0.0
+2022-12-18 15:39:27.705111-05:00: ##    NO ANY POSITION    ##
+2022-12-18 15:39:27.705111-05:00: ##    NO any order    ##
+Try brokerClient IB port=7496
+port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+Connected to IB is successful using port=7496
+####     Data ingestion starts    ####
+ingested hist of security=STK,,,SPY,USD barSize=1 min from IB
+1st line=2022-12-12 14:30:00-05:00
+last line=2022-12-16 20:59:00-05:00
+####     Data ingestion COMPLETED    ####
+IBridgePy version 18.1.7
+fileName = UpdatedAlgoCommon.py
+Cannot find ingested hist for security=STK,SPY,USD endTime=20221214 14:30:00 UTC goBack=31300 S barSize=5 mins
+IBridgePy has to request historical data from broker IB to continue backtesting but it will be slow. Recommend to add HistIngestPlan in TEST_ME.py
+####    Starting to initialize trader    ####
+##    ACCOUNT Balance  DU2628075  ##
+CASH=100000.0
+portfolio_value=100000.0
+positions_value=0.0
+##    NO ANY POSITION    ##
+##    NO any order    ##
+####    Initialize trader COMPLETED    ####
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.02022-12-18 15:58:10.875591-05:00: Try brokerClient IBinsync port=7496
+2022-12-18 15:58:10.887540-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-12-18 15:58:10.890562-05:00: Connected to IB is successful using port=7496
+2022-12-18 15:58:10.894524-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-12-18 15:58:10.929430-05:00: CASH=293703.12
+2022-12-18 15:58:10.929430-05:00: portfolio_value=294049.24
+2022-12-18 15:58:10.930428-05:00: positions_value=0.0
+2022-12-18 15:58:10.931426-05:00: ##    NO ANY POSITION    ##
+2022-12-18 15:58:10.932423-05:00: ##    NO any order    ##
+Try brokerClient IB port=7496
+port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+Connected to IB is successful using port=7496
+####     Data ingestion starts    ####
+ingested hist of security=STK,,,SPY,USD barSize=1 min from IB
+1st line=2022-12-12 14:30:00-05:00
+last line=2022-12-16 20:59:00-05:00
+####     Data ingestion COMPLETED    ####
+IBridgePy version 18.1.7
+fileName = UpdatedAlgoCommon.py
+Cannot find ingested hist for security=STK,SPY,USD endTime=20221214 14:30:00 UTC goBack=31300 S barSize=5 mins
+IBridgePy has to request historical data from broker IB to continue backtesting but it will be slow. Recommend to add HistIngestPlan in TEST_ME.py
+####    Starting to initialize trader    ####
+##    ACCOUNT Balance  DU2628075  ##
+CASH=100000.0
+portfolio_value=100000.0
+positions_value=0.0
+##    NO ANY POSITION    ##
+##    NO any order    ##
+####    Initialize trader COMPLETED    ####
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.02022-12-18 16:10:57.796539-05:00: Try brokerClient IBinsync port=7496
+2022-12-18 16:10:57.809465-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-12-18 16:10:57.813482-05:00: Connected to IB is successful using port=7496
+2022-12-18 16:10:57.817454-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-12-18 16:10:57.854376-05:00: CASH=293703.12
+2022-12-18 16:10:57.855373-05:00: portfolio_value=294049.24
+2022-12-18 16:10:57.855373-05:00: positions_value=0.0
+2022-12-18 16:10:57.857368-05:00: ##    NO ANY POSITION    ##
+2022-12-18 16:10:57.857368-05:00: ##    NO any order    ##
+Try brokerClient IB port=7496
+port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+Connected to IB is successful using port=7496
+####     Data ingestion starts    ####
+ingested hist of security=STK,,,SPY,USD barSize=1 min from IB
+1st line=2022-12-12 14:30:00-05:00
+last line=2022-12-16 20:59:00-05:00
+####     Data ingestion COMPLETED    ####
+IBridgePy version 18.1.7
+fileName = UpdatedAlgoCommon.py
+Cannot find ingested hist for security=STK,SPY,USD endTime=20221214 14:30:00 UTC goBack=31300 S barSize=5 mins
+IBridgePy has to request historical data from broker IB to continue backtesting but it will be slow. Recommend to add HistIngestPlan in TEST_ME.py
+####    Starting to initialize trader    ####
+##    ACCOUNT Balance  DU2628075  ##
+CASH=100000.0
+portfolio_value=100000.0
+positions_value=0.0
+##    NO ANY POSITION    ##
+##    NO any order    ##
+####    Initialize trader COMPLETED    ####
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0Try brokerClient IB port=7496
+port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+Connected to IB is successful using port=7496
+####     Data ingestion starts    ####
+ingested hist of security=STK,,,SPY,USD barSize=1 min from IB
+1st line=2022-12-12 14:30:00-05:00
+last line=2022-12-16 20:59:00-05:00
+####     Data ingestion COMPLETED    ####
+IBridgePy version 18.1.7
+fileName = UpdatedAlgoCommon.py
+Cannot find ingested hist for security=STK,SPY,USD endTime=20221214 14:30:00 UTC goBack=31300 S barSize=5 mins
+IBridgePy has to request historical data from broker IB to continue backtesting but it will be slow. Recommend to add HistIngestPlan in TEST_ME.py
+####    Starting to initialize trader    ####
+##    ACCOUNT Balance  DU2628075  ##
+CASH=100000.0
+portfolio_value=100000.0
+positions_value=0.0
+##    NO ANY POSITION    ##
+##    NO any order    ##
+####    Initialize trader COMPLETED    ####
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0Try brokerClient IB port=7496
+port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+Connected to IB is successful using port=7496
+####     Data ingestion starts    ####
+ingested hist of security=STK,,,SPY,USD barSize=1 min from IB
+1st line=2022-12-12 14:30:00-05:00
+last line=2022-12-16 20:59:00-05:00
+####     Data ingestion COMPLETED    ####
+IBridgePy version 18.1.7
+fileName = UpdatedAlgoCommon.py
+####    Starting to initialize trader    ####
+##    ACCOUNT Balance  DU2628075  ##
+CASH=100000.0
+portfolio_value=100000.0
+positions_value=0.0
+##    NO ANY POSITION    ##
+##    NO any order    ##
+####    Initialize trader COMPLETED    ####
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0Try brokerClient IB port=7496
+port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+Connected to IB is successful using port=7496
+####     Data ingestion starts    ####
+ingested hist of security=STK,,,SPY,USD barSize=1 min from IB
+1st line=2022-12-08 14:30:00-05:00
+last line=2022-12-16 20:59:00-05:00
+####     Data ingestion COMPLETED    ####
+IBridgePy version 18.1.7
+fileName = UpdatedAlgoCommon.py
+####    Starting to initialize trader    ####
+##    ACCOUNT Balance  DU2628075  ##
+CASH=100000.0
+portfolio_value=100000.0
+positions_value=0.0
+##    NO ANY POSITION    ##
+##    NO any order    ##
+####    Initialize trader COMPLETED    ####
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.02022-12-18 17:27:43.669185-05:00: Try brokerClient IBinsync port=7496
+2022-12-18 17:27:43.682717-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-12-18 17:27:43.682717-05:00: Connected to IB is successful using port=7496
+2022-12-18 17:27:43.685709-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-12-18 17:27:43.732583-05:00: CASH=293703.12
+2022-12-18 17:27:43.733580-05:00: portfolio_value=294049.24
+2022-12-18 17:27:43.733580-05:00: positions_value=0.0
+2022-12-18 17:27:43.738567-05:00: ##    NO ANY POSITION    ##
+2022-12-18 17:27:43.739564-05:00: ##    NO any order    ##
+Try brokerClient IB port=7496
+port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+Connected to IB is successful using port=7496
+####     Data ingestion starts    ####
+ingested hist of security=STK,,,SPY,USD barSize=1 min from IB
+1st line=2022-12-08 14:30:00-05:00
+last line=2022-12-16 20:59:00-05:00
+####     Data ingestion COMPLETED    ####
+IBridgePy version 18.1.7
+fileName = UpdatedAlgoCommon.py
+####    Starting to initialize trader    ####
+##    ACCOUNT Balance  DU2628075  ##
+CASH=100000.0
+portfolio_value=100000.0
+positions_value=0.0
+##    NO ANY POSITION    ##
+##    NO any order    ##
+####    Initialize trader COMPLETED    ####
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.02022-12-18 18:20:08.812952-05:00: Try brokerClient IBinsync port=7496
+2022-12-18 18:20:08.826555-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-12-18 18:20:08.828579-05:00: Connected to IB is successful using port=7496
+2022-12-18 18:20:08.833536-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-12-18 18:20:08.872432-05:00: CASH=293703.12
+2022-12-18 18:20:08.873430-05:00: portfolio_value=294049.24
+2022-12-18 18:20:08.873430-05:00: positions_value=0.0
+2022-12-18 18:20:08.874427-05:00: ##    NO ANY POSITION    ##
+2022-12-18 18:20:08.875424-05:00: ##    NO any order    ##
+2022-12-18 18:20:17.617131-05:00: Try brokerClient IBinsync port=7496
+2022-12-18 18:20:17.630065-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-12-18 18:20:17.633057-05:00: Connected to IB is successful using port=7496
+2022-12-18 18:20:17.637046-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-12-18 18:20:17.685915-05:00: CASH=293703.12
+2022-12-18 18:20:17.686912-05:00: portfolio_value=294049.24
+2022-12-18 18:20:17.686912-05:00: positions_value=0.0
+2022-12-18 18:20:17.688936-05:00: ##    NO ANY POSITION    ##
+2022-12-18 18:20:17.688936-05:00: ##    NO any order    ##
+Try brokerClient IB port=7496
+port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+Connected to IB is successful using port=7496
+####     Data ingestion starts    ####
+ingested hist of security=STK,,,SPY,USD barSize=1 min from IB
+1st line=2022-12-08 14:30:00-05:00
+last line=2022-12-16 20:59:00-05:00
+####     Data ingestion COMPLETED    ####
+IBridgePy version 18.1.7
+fileName = UpdatedAlgoCommon.py
+####    Starting to initialize trader    ####
+##    ACCOUNT Balance  DU2628075  ##
+CASH=100000.0
+portfolio_value=100000.0
+positions_value=0.0
+##    NO ANY POSITION    ##
+##    NO any order    ##
+####    Initialize trader COMPLETED    ####
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0Try brokerClient IB port=7496
+port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+Connected to IB is successful using port=7496
+####     Data ingestion starts    ####
+ingested hist of security=STK,,,SPY,USD barSize=1 min from IB
+1st line=2022-12-08 14:30:00-05:00
+last line=2022-12-16 20:59:00-05:00
+####     Data ingestion COMPLETED    ####
+IBridgePy version 18.1.7
+fileName = UpdatedAlgoCommon.py
+####    Starting to initialize trader    ####
+##    ACCOUNT Balance  DU2628075  ##
+CASH=100000.0
+portfolio_value=100000.0
+positions_value=0.0
+##    NO ANY POSITION    ##
+##    NO any order    ##
+####    Initialize trader COMPLETED    ####
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.02022-12-18 19:26:30.812328-05:00: Try brokerClient IBinsync port=7496
+2022-12-18 19:26:30.824266-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-12-18 19:26:30.827286-05:00: Connected to IB is successful using port=7496
+2022-12-18 19:26:30.831247-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-12-18 19:26:30.870144-05:00: CASH=293703.12
+2022-12-18 19:26:30.871141-05:00: portfolio_value=294049.24
+2022-12-18 19:26:30.871141-05:00: positions_value=0.0
+2022-12-18 19:26:30.872137-05:00: ##    NO ANY POSITION    ##
+2022-12-18 19:26:30.873135-05:00: ##    NO any order    ##
+Try brokerClient IB port=7496
+port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+Connected to IB is successful using port=7496
+####     Data ingestion starts    ####
+ingested hist of security=STK,,,SPY,USD barSize=1 min from IB
+1st line=2022-12-08 14:30:00-05:00
+last line=2022-12-16 20:59:00-05:00
+####     Data ingestion COMPLETED    ####
+IBridgePy version 18.1.7
+fileName = UpdatedAlgoCommon.py
+####    Starting to initialize trader    ####
+##    ACCOUNT Balance  DU2628075  ##
+CASH=100000.0
+portfolio_value=100000.0
+positions_value=0.0
+##    NO ANY POSITION    ##
+##    NO any order    ##
+####    Initialize trader COMPLETED    ####
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.02022-12-18 19:33:00.517566-05:00: Try brokerClient IBinsync port=7496
+2022-12-18 19:33:00.530347-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-12-18 19:33:00.532342-05:00: Connected to IB is successful using port=7496
+2022-12-18 19:33:00.536331-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-12-18 19:33:00.576294-05:00: CASH=293703.12
+2022-12-18 19:33:00.576294-05:00: portfolio_value=294049.24
+2022-12-18 19:33:00.576294-05:00: positions_value=0.0
+2022-12-18 19:33:00.578289-05:00: ##    NO ANY POSITION    ##
+2022-12-18 19:33:00.578289-05:00: ##    NO any order    ##
+Try brokerClient IB port=7496
+port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+Connected to IB is successful using port=7496
+####     Data ingestion starts    ####
+ingested hist of security=STK,,,SPY,USD barSize=1 min from IB
+1st line=2022-12-08 14:30:00-05:00
+last line=2022-12-16 20:59:00-05:00
+####     Data ingestion COMPLETED    ####
+IBridgePy version 18.1.7
+fileName = UpdatedAlgoCommon.py
+####    Starting to initialize trader    ####
+##    ACCOUNT Balance  DU2628075  ##
+CASH=100000.0
+portfolio_value=100000.0
+positions_value=0.0
+##    NO ANY POSITION    ##
+##    NO any order    ##
+####    Initialize trader COMPLETED    ####
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.0
+Deduct commission=1.02022-12-18 19:37:06.672401-05:00: Try brokerClient IBinsync port=7496
+2022-12-18 19:37:06.685327-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-12-18 19:37:06.688319-05:00: Connected to IB is successful using port=7496
+2022-12-18 19:37:06.692311-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-12-18 19:37:06.731128-05:00: CASH=293703.12
+2022-12-18 19:37:06.731128-05:00: portfolio_value=294049.24
+2022-12-18 19:37:06.732125-05:00: positions_value=0.0
+2022-12-18 19:37:06.733122-05:00: ##    NO ANY POSITION    ##
+2022-12-18 19:37:06.733122-05:00: ##    NO any order    ##

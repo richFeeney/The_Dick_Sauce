@@ -247,9 +247,15 @@ def dailyLogging(context,data,ema,price):
    
     with open(context.log_name, 'a', newline='') as logFile:
         log=[str(context.sTime.timestamp()), str(ema.fast), str(ema.fast_1), str(ema.slow), str(ema.t_line), str(ema.macd), str(ema.macd_9), 
-        str(context.longBool), str(context.shortBool), str(context.long_flag), str(context.short_flag),str(context.enter_flag), 
-        str(context.entry_flag), str(context.exit_flag), str(price.ask), str(price.bid), str(price.last), str(price.mid),
-        str(context.portfolio.portfolio_value),str(context.portfolio.positions_value),str(context.portfolio.cash)]
+        # flags
+        str(context.longBool), str(context.shortBool), str(context.long_flag), str(context.short_flag),str(context.enter_flag),
+        str(context.entry_flag), str(context.exit_flag),str(context.exitTimerFlag), str(context.saleFlag), str(context.exitTouchTime.timestamp()),
+        # price
+        str(price.ask), str(price.bid), str(price.last), str(price.mid),
+        # candles
+        str(context.hist_1min.open[-1]),str(context.hist_1min.high[-1]),str(context.hist_1min.low[-1]),str(context.hist_1min.close[-1]),str(context.hist_1min.volume[-1]),
+        # portfolio
+        str(context.positionSize),str(context.portfolio.portfolio_value),str(context.portfolio.positions_value),str(context.portfolio.cash)]
         logFile.write(', '.join(log))
         logFile.write("\n")
 
@@ -273,7 +279,7 @@ def flag_reset(context):
     context.double_flag =    False
     context.exit_flag =      False
     context.exitTimerFlag =  False
-    context.exitTouchTime =  np.NaN
+    context.exitTouchTime =  context.sTime
     context.saleFlag =       False
     context.order =          None
     context.double_order =   None
@@ -330,7 +336,7 @@ def initialize(context,data):
 def getEndOfDayCandles(context,data):
     # collect daily price data and save to log
     dailyPriceData = data.parentTrader.request_historical_data(symbol('SPY'), '1 min', '23400 S')
-    dailyPriceData.to_csv(r"D:\algo2\IBridgePy_Win_Anaconda38_64 - Copy\Log\Daily_Price_Data_"+str(datetime.date.today())+".csv")
+    dailyPriceData.to_csv(r"Log\Daily_Price_Data_"+str(datetime.date.today())+".csv")
     
 def closeOutTasks(context, data):
     # generate daily price data for later review and plotting
@@ -349,7 +355,7 @@ def fixBoolData(logData):
     """ This function takes in the daily log data and converts the long/shortbool
     data and converts it to boolean from string format."""
     
-    for parm in ([logData.shortBool,logData.longBool, logData.shortFlag,logData.longFlag, logData.enterFlag, logData.entryFlag, logData.exitFlag]):
+    for parm in ([logData.shortBool,logData.longBool, logData.shortFlag,logData.longFlag, logData.enterFlag, logData.entryFlag, logData.exitFlag, logData.exitTimerFlag, logData.saleFlag]):
         for i in range(len(parm.values)):
             if type(parm.iloc[i])==str:
                 if parm.iloc[i].split()[0].lower()=="false":
@@ -382,15 +388,15 @@ def calcEntryStatus(logData):
 
 
 def sendEmailEndOfDay(email_sender:str = "lanecapitalgroup.feeney@gmail.com",
-                      email_receiver:list = ["richfeeney6@gmail.com","lanecapitalgroup1@gmail.com", "mellingrady@gmail.com"],
-                      attachments: list = [r"D:\algo2\IBridgePy_Win_Anaconda38_64 - Copy\Output\OutputData_"+str(datetime.date.today())+".zip"]):
+                      email_receiver:list = ["richfeeney6@gmail.com","lanecapitalgroup1@gmail.com", "mellingrady@gmail.com","lane.kyle0209@gmail.com","foley802@gmail.com"],
+                      attachments: list = [r"Output\OutputData_"+str(datetime.date.today())+".zip"]):
 
-    
+    pnl, count = getPl() # get profit/loss and number of trades to put in email
+
     email_password = "bhpoxfksvoubpaxl"
     subject = "Daily Plots "+str(datetime.date.today())
-    body = """See attached for plots and data for """+str(datetime.date.today())
-    
-  
+    body = """See attached for plots and data for """+str(datetime.date.today())+"\nDaily Profit: "+str(pnl)+"$\nNumber of Trades: "+str(count)
+
     for email in email_receiver:
         msg = MIMEMultipart()
         msg['From'] = email_sender
@@ -421,24 +427,11 @@ def sendEmailEndOfDay(email_sender:str = "lanecapitalgroup.feeney@gmail.com",
         
 def generateDailyPlots():
     # create new directory for output plots
-    newDir = r"D:\algo2\IBridgePy_Win_Anaconda38_64 - Copy\Output\candlestick_"+str(datetime.date.today())
+    newDir = r"Output\candlestick_"+str(datetime.date.today())
     if not os.path.isdir(newDir):
         os.mkdir(newDir)
 
-    # load price data
-    priceName = r"log\Daily_Price_Data_"+str(datetime.date.today())+".csv"
-    priceColumns = ["date", "time", "open", "high", "low", "close", "volume"]
-    priceData = pd.read_csv(priceName, header=1, names=priceColumns)
-    # convert the time into datetime
-    priceData['date'] =  np.array([datetime.datetime.fromtimestamp(f) for f in priceData.time.values])
-
-    # load ema data
-    logName = r"D:\algo2\IBridgePy_Win_Anaconda38_64 - Copy\Log\Daily_Log_"+str(datetime.date.today())+".csv"
-    logColumns = ["time", "fast", "fast1", "slow", "tLine", "macd", "signalLine", "longBool", "shortBool", "longFlag", "shortFlag", 
-    "enterFlag", "entryFlag", "exitFlag", "askPrice", "bidPrice", "lastPrice", "midPrice", "portfolioValue", "positionValue", "cash"]
-    logData = pd.read_csv(logName, header=1, names=logColumns)
-    logData = cleanLogData(logData)
-    logData['date'] = np.array([datetime.datetime.fromtimestamp(float(f)) for f in logData.time.values])
+    logData, priceData = loadAndCleanData() # load and clean up log data
 
     # define x limits to plot hourly data
     xlim = Utils.getPlottingHourLimits(logData)
@@ -469,14 +462,14 @@ def ZipFilesForDelivery():
     """ This function runs at the end of the day and copies output logs to a predetermined directory and zips the files """
     
     #make directory to pass folders
-    zipPath = r"D:\algo2\IBridgePy_Win_Anaconda38_64 - Copy\Output\candlestick_"+str(datetime.date.today())
+    zipPath = r"Output\candlestick_"+str(datetime.date.today())
     if not os.path.isdir(zipPath):
         os.mkdir(zipPath)
 
     # pass daily log, price data, and trader log
-    logPath = r"D:\algo2\IBridgePy_Win_Anaconda38_64 - Copy\Log\Daily_Log_"+str(datetime.date.today())+".csv"
-    pricePath = r"D:\algo2\IBridgePy_Win_Anaconda38_64 - Copy\Log\Daily_Price_Data_"+str(datetime.date.today())+".csv"
-    traderPath = r"D:\algo2\IBridgePy_Win_Anaconda38_64 - Copy\Log\TraderLog_"+str(datetime.date.today())+".txt"
+    logPath = r"Log\Daily_Log_"+str(datetime.date.today())+".csv"
+    pricePath = r"Log\Daily_Price_Data_"+str(datetime.date.today())+".csv"
+    traderPath = r"Log\TraderLog_"+str(datetime.date.today())+".txt"
 
     # copy files to new directory
     shutil.copy(logPath,zipPath+"\\"+logPath.split("\\")[-1])
@@ -490,17 +483,25 @@ def ZipFilesForDelivery():
 def cleanLogData(logData):
     """ This function takes in the log data and cleans it up so it can be used for plotting and other tasks"""
     logData = logData[logData["time"]!="time"] # remove columns which result from rerunning algo in the day
+
     for i in range(len(logData.time)): # convert loop parameters from string to floating point
-        logData.time.iloc[i]=float(logData.time.iloc[i])
+        logData.time.iloc[i]=np.double(logData.time.iloc[i])
         logData.fast.iloc[i]=float(logData.fast.iloc[i])
         logData.slow.iloc[i]=float(logData.slow.iloc[i])
         logData.macd.iloc[i]=float(logData.macd.iloc[i])
         logData.fast1.iloc[i]=float(logData.fast1.iloc[i])
         logData.tLine.iloc[i]=float(logData.tLine.iloc[i])
+        logData.exitTouchTime.iloc[i]=np.double(logData.exitTouchTime.iloc[i])
         logData.askPrice.iloc[i]=float(logData.askPrice.iloc[i])
         logData.bidPrice.iloc[i]=float(logData.bidPrice.iloc[i])
         logData.lastPrice.iloc[i]=float(logData.lastPrice.iloc[i])
         logData.midPrice.iloc[i]=float(logData.midPrice.iloc[i])
+        logData.open.iloc[i]=float(logData.open.iloc[i])
+        logData.high.iloc[i]=float(logData.high.iloc[i])
+        logData.low.iloc[i]=float(logData.low.iloc[i])
+        logData.close.iloc[i]=float(logData.close.iloc[i])
+        logData.volume.iloc[i]=float(logData.volume.iloc[i])
+        logData.positionSize.iloc[i]=int(logData.positionSize.iloc[i])
         logData.portfolioValue.iloc[i]=float(logData.portfolioValue.iloc[i])
         logData.positionValue.iloc[i]=float(logData.positionValue.iloc[i])
         logData.cash.iloc[i]=float(logData.cash.iloc[i])
@@ -520,3 +521,38 @@ def getPlottingHourLimits(logData):
     xlim = [(datetime.datetime(today.year,today.month,today.day,dates[i],31,0), datetime.datetime(today.year,today.month,today.day,dates[i+1],31,0)) for i in range(len(dates)-1)]
     
     return xlim
+
+def loadAndCleanData(priceDataPath: str = r"log\Daily_Price_Data_"+str(datetime.date.today())+".csv",
+                    logDataPath: str = r"Log\Daily_Log_"+str(datetime.date.today())+".csv"):
+    """ This function loads in the price and log data, cleans it up and returns it. """
+    
+    # load price data
+    priceColumns = ["date", "time", "open", "high", "low", "close", "volume"]
+    priceData = pd.read_csv(priceDataPath, header=1, names=priceColumns)
+    # convert the time into datetime
+    priceData['date'] =  np.array([datetime.datetime.fromtimestamp(f) for f in priceData.time.values])
+
+    # load ema data
+    logColumns = ["time", "fast", "fast1", "slow", "tLine", "macd", "signalLine", "longBool", "shortBool", "longFlag", "shortFlag", 
+                "enterFlag", "entryFlag", "exitFlag", "exitTimerFlag", "saleFlag", "exitTouchTime", "askPrice", "bidPrice", 
+                "lastPrice", "midPrice", "open", "high", "low", "close", "volume", "positionSize", "portfolioValue", "positionValue", "cash"]
+    logData = pd.read_csv(logDataPath, header=0, names=logColumns)
+    logData = cleanLogData(logData)
+    logData['date'] = np.array([datetime.datetime.fromtimestamp(float(f)) for f in logData.time.values])
+    
+    return logData, priceData
+
+def getPl():
+    """ This function is used to get # of trades and P&L for the trading day """
+    count=0
+    logData, priceData = loadAndCleanData()
+
+    # get profit/loss for day
+    pnl = np.round(logData.portfolioValue.iloc[-1]-logData.portfolioValue.iloc[0],2)
+    
+    # get number of trades by looping through and seeing when position size changes (but not to zero since that would indicate a sale)
+    for i in range(1,len(logData.positionSize.values)):
+        if logData.positionSize.values[i]!=logData.positionSize.values[i-1] and logData.positionSize.values[i]!=0:
+            count+=1
+
+    return pnl, count
