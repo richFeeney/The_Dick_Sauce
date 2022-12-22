@@ -19,7 +19,7 @@ import pytz
 import sys
 import time
 
-sys.path.append(r'D:\algo2\IBridgePy_Win_Anaconda38_64 - Copy')
+sys.path.append(r'C:\algo2')
 from IBridgePy.Trader import Trader
 from trader_factory import build_active_IBridgePy_plus
 from IBridgePy.IbridgepyTools import symbol
@@ -41,7 +41,7 @@ def initialize(context):
     context.long_flag = False # flag that we currently own long
     context.short_flag = False # flag that we currently own short
     context.hist_1min = request_historical_data(context.security, '1 min', '16000 S')
-    context.hist_5min = request_historical_data(context.security, '5 mins', '31300 S')
+    context.hist_5min = np.NaN #request_historical_data(context.security, '5 mins', '31300 S')
     context.macd_list = []
     context.entry_price = None
     context.enter_flag = False # flag to buy stock
@@ -64,7 +64,7 @@ def initialize(context):
     context.exit_order = None
     context.entry_time = None
     context.exit_time = None
-    context.exitTouchTime = np.NaN
+    context.exitTouchTime = get_datetime('US/Eastern')
     context.saleFlag = False
     context.price_1 = show_real_time_price(context.security, 'last_price')
     context.price_n = show_real_time_price(context.security, 'last_price')
@@ -73,7 +73,7 @@ def initialize(context):
     context.log_name = "N/A"
     context.sTime = -9999
     context.positionSize = 0
-    context.macdDelta = 0.1
+    context.macdDelta = 0.05
     context.counter = collections.deque()
     current_date = datetime.date.today()
     current_date_string = str(current_date)
@@ -81,65 +81,76 @@ def initialize(context):
     context.file_name = "Log\\Buy_Sell_Log_" + current_date_string + extension
     context.log_name = "Log\\Daily_Log_" + current_date_string + extension
     context.sTime = get_datetime('US/Eastern') # Algo start time
-    
+    context.weightAvg = 0.
+    context.tSlope = collections.deque()
+    context.tLine = collections.deque()
+    context.tempBool = False # temporary flag to sell stock from last night
+    context.slopeBypass = 1 # slope needed to bypass macdDelta check (dollars/min)
     # open and head the log files
     
     with open(context.file_name, 'w', newline='') as csvfile:
-        csvfile.write("""time, fast, fast1, slow, tLine, macd, signalLine, longBool, shorBool, longFlag, shortFlag, enterFlag, entryFlag, exitFlag, askPrice, bidPrice, lastPrice, midPrice, portfolioValue, positionValue, cash \n""")
+        csvfile.write("""time, fast, fast1, slow, tLine, macd, signalLine, longBool, shortBool, longFlag, shortFlag, enterFlag, entryFlag, exitFlag, askPrice, bidPrice, lastPrice, midPrice, portfolioValue, positionValue, cash \n""")
     
     with open(context.log_name, 'w', newline='') as dailyLog:
-        dailyLog.write("""time, fast, fast1, slow, tLine, macd, signalLine, longBool, shorBool, longFlag, shortFlag, enterFlag, entryFlag, exitFlag, askPrice, bidPrice, lastPrice, midPrice, portfolioValue, positionValue, cash \n""")
+        dailyLog.write("""time, fast, fast1, slow, tLine, macd, signalLine, longBool, shortBool, longFlag, shortFlag, enterFlag, entryFlag, exitFlag, askPrice, bidPrice, lastPrice, midPrice, portfolioValue, positionValue, cash \n""")
 
 def handle_data(context, data):
-
+    
     #################### Initialize Variables ####################
     context.sTime = get_datetime('US/Eastern') # Algo start time
     context.positionSize = count_positions(context.security)
-    print("Time: "+str(context.sTime.timestamp()))
+    print("Time: "+str(context.sTime))
     print("Position Size:"+str(count_positions(context.security)))
     print("Portfolio Value: "+str(context.portfolio.portfolio_value))
-    
+
     #################### Get Current Price ####################
     price = Utils.Price(context,data)
-    if context.sTime.weekday() <= 4 and 10 <= context.sTime.hour < 16:  # Only trades on weekdays
-        # if context.sTime.second == 1 or context.sTime.second == 21 or context.sTime.second == 41: # TODO fix this
-
-        #################### Get Historical Data ####################
-        context.hist_1min = request_historical_data(context.security, '1 min', '26000 S')
-        # context.hist_5min = request_historical_data(context.security, '5 mins', '31300 S')
-        
-        #################### Calculate indicators ####################
-        ema = IndicatorCalculations.ExpMovAvg(context.hist_1min,price.ask)
-        
-        #################### Check to Enter ####################
-        if not context.enter_flag: # if we dont have an order for stock
-            print("checking the cross")
-            EnterExits.checkCross(context,ema) # check if fast/slow are crossing
+    
+    #################### Get Historical Data ####################
+    context.hist_1min = request_historical_data(context.security, '1 min', '26000 S')
+    # context.hist_5min = request_historical_data(context.security, '5 mins', '31300 S')
+    
+    #################### Calculate indicators ####################
+    ema = IndicatorCalculations.ExpMovAvg(context.hist_1min,price.ask)
+    # IndicatorCalculations.getTLineSlope(context, ema) # get slope of tline for enter exits TODO fix structure of code
+   
+    # if context.sTime.weekday() <= 4 and 8 <= context.sTime.hour <24 and context.tempBool==False:  # Only trades on weekdays
+    #     if context.positionSize != 0: # exit all positions end of day
+    #         Orders.generateSellOrder(context,data,price,ema)
+    #         context.tempBool=True
             
-        if not context.enter_flag: # if we dont have an order for stock
-            print("checking to enter")
-            EnterExits.checkEnter(context, ema,price) # check if we want to enter
+    if context.sTime.weekday() <= 4 and 10 <= context.sTime.hour <16:  # Only trades on weekdays
+        if context.sTime.hour<15 or context.sTime.hour==15 and context.sTime.minute<=30:
+            
+            #################### Check to Enter ####################
+            if context.positionSize == 0: # if we dont have an order for stock
+                print("checking the cross")
+                EnterExits.checkCross(context,ema) # check if fast/slow are crossing
 
-        if context.enter_flag and not context.entry_flag: # Place buy order
-            print("Placing Buy Order")
-            Orders.generateBuyOrder(context,data,price,ema)
+                print("checking to enter")
+                EnterExits.checkEnter(context, ema,price) # check if we want to enter
 
-        #################### Check to Exit ####################
-        if context.entry_flag: 
-            print("checking to Exit")
-            EnterExits.checkExit(context, data, ema, price) # check if we want to exit
+            if context.enter_flag: # Place buy order
+                print("Placing Buy Order")
+                Orders.generateBuyOrder(context,data,price,ema)
 
-        if context.saleFlag: 
-            print("Placing sell order")
-            Orders.generateSellOrder(context,data,price,ema) # place sell order
-        
-        #################### Log Outputs ####################
-        Utils.dailyLogging(context,data,ema,price)
+            #################### Check to Exit ####################
+            if context.positionSize != 0: 
+                print("checking to Exit")
+                EnterExits.checkExit(context, data, ema, price) # check if we want to exit
+
+            if context.saleFlag: 
+                print("Placing sell order")
+                Orders.generateSellOrder(context,data,price,ema) # place sell order
+            
+            #################### Log Outputs ####################
+            Utils.dailyLogging(context,data,ema,price)
 
     #################### Closeout Stuff ####################
-    if context.sTime.weekday() <= 4 and context.sTime.hour == 16 and context.sTime.minute == 0 and context.sTime.second >= 0: # 58 s in case our algo runs long
-        if count_positions(context.security) != 0: # exit all positions end of day
+    if context.sTime.weekday() <= 4 and context.sTime.hour == 15 and context.sTime.minute == 32 and context.sTime.second >= 0: 
+        if context.positionSize != 0: # exit all positions end of day
             Orders.generateSellOrder(context,data,price,ema)
+            Utils.dailyLogging(context,data,ema,price)
         
         Utils.closeOutTasks(context,data)               
         display_all()

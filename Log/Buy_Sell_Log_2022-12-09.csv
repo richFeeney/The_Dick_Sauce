@@ -1,8 +1,0 @@
-time, fast, fast1, slow, tLine, macd, signalLine, longBool, shorBool, longFlag, shortFlag, enterFlag, entryFlag, exitFlag, askPrice, bidPrice, lastPrice, midPrice, portfolioValue, positionValue, cash 
-1670598005.0, 395.77, 395.69, 395.74, 395.85, -0.02, -0.05, False, False, True, False, False, True, False, 396.21, 396.12, 396.23, 396.16, 298993.95, 791.12, 299625.23
-1670598095.0, 395.61, 395.59, 395.69, 395.6, -0.05, -0.06, False, False, False, False, False, False, False, 395.64, 395.61, 395.58, 395.62, 298902.35, 117885.82, 180856.69
-1670598125.0, 395.76, 395.71, 395.73, 395.8, 0.01, -0.04, False, False, True, False, False, True, False, 396.02, 396.0, 395.99, 396.01, 298902.35, 117885.82, 180856.69
-1670598168.0, 395.73, 395.7, 395.72, 395.76, 0.01, -0.04, False, False, False, False, False, False, False, 395.91, 395.89, 395.9, 395.9, 298983.93, 355518.19, -56694.1
-1670598176.0, 395.75, 395.71, 395.73, 395.79, 0.01, -0.04, False, False, True, False, False, True, False, 395.99, 395.97, 396.04, 395.98, 298983.93, 355518.19, -56694.1
-1670598790.0, 395.9, 395.94, 395.86, 395.89, 0.04, 0.08, False, False, False, False, False, False, False, 395.72, 395.7, 395.71, 395.71, 298799.57, 494261.79, -531542.9
-1670598815.0, 395.83, 395.89, 395.84, 395.79, 0.01, 0.07, False, False, False, True, False, True, False, 395.53, 395.52, 395.49, 395.52, 298816.36, 830203.66, -531547.14

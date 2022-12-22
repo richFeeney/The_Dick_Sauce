@@ -16,7 +16,7 @@ All rights reserved.
 from configuration import run_me
 
 # fileName = 'example_show_positions.py'
-fileName= 'UpdatedAlgoCommon.py'
+fileName= 'updatedAlgoCommon.py'
 # fileName = 'example_get_historical_data.py'
 # fileName = 'example_show_real_time_prices.py'
 # fileName = 'example_place_order.py'

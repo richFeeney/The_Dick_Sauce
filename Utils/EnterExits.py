@@ -12,7 +12,7 @@ import pytz
 import sys
 import time
 
-sys.path.append(r'D:\algo2\IBridgePy_Win_Anaconda38_64 - Copy')
+sys.path.append(r'C:\algo2')
 from IBridgePy.Trader import Trader
 from trader_factory import build_active_IBridgePy_plus
 from IBridgePy.IbridgepyTools import symbol
@@ -37,9 +37,10 @@ def checkLong(context, ema, price):
     
     enter_flag_temp = False # set enter flag to false Automatically
     print('checking long\n')
-    if (price.ask > ema.fast)  and (ema.fast> ema.slow) : # check to see we are in enter long conditions
+    if (price.mid > ema.fast)  and (ema.fast> ema.slow) : # check to see we are in enter long conditions
         print('Checking Long before the chop\n')
-        if (ema.fast  > ema.fast_1) and ema.macd > (ema.macd_9 + context.macdDelta): # checks to ensure we are not buying in the chop
+
+        if (ema.fast  > ema.fast_1) and (ema.macd > (ema.macd_9 + context.macdDelta)): # checks to ensure we are not buying in the chop
             print('We passed the chop, buy long')
             enter_flag_temp = True # buy               
     return enter_flag_temp
@@ -56,9 +57,10 @@ def checkShort(context, ema, price):
     # pdb.set_trace()
     enter_flag_temp = False  # set enter flag to false Automatically
     print('checking short\n')
-    if (price.ask < ema.fast) and (ema.fast< ema.slow): # check to see we are in enter short conditions
+    if (price.mid < ema.fast) and (ema.fast< ema.slow): # check to see we are in enter short conditions
         print('Checking short before the chop\n')
-        if (ema.fast < ema.fast_1)  and ema.macd < (ema.macd_9 - context.macdDelta): # checks to ensure we are not buying in the chop
+
+        if (ema.fast < ema.fast_1)  and (ema.macd < (ema.macd_9 - context.macdDelta)): # checks to ensure we are not buying in the chop
             print('We passed the chop, buy short')
             enter_flag_temp = True # buy         
     return enter_flag_temp
@@ -88,38 +90,56 @@ def checkDoubleOrNothing(context, data, price, ema):
     
     If the position increase requirements are not met, we exit the position"""
 
-    if context.longBool:
-        if ema.t_line>ema.slow and ema.fast>ema.slow and ema.macd>ema.macd_9: # double position
+    if context.long_flag:
+        if ema.t_line>ema.slow and ema.macd>ema.macd_9: # double position
+            print("Double Long")
             Orders.generateBuyOrder(context,data,price,ema) 
         else:
+            print("exit not double")
             context.saleFlag=True
-    if context.shortBool:
-        if ema.t_line<ema.slow and ema.fast<ema.slow and ema.macd<ema.macd_9: # double position
-            Orders.generateBuyOrder(context,data,price,ema) 
+    if context.short_flag:
+        if ema.t_line<ema.slow and ema.macd<ema.macd_9: # double position
+           print("Double Long")
+           Orders.generateBuyOrder(context,data,price,ema) 
         else:
+            print("exit not double")
             context.saleFlag=True
 
 
 def checkExit(context, data, ema, price):
-    """This function takes in the input context, which is an IBPY standard structure, and an EMA dataframe and 
-        calls the checks if we are deciding to enter short or long"""
-    # TODO come back and clean up these if statements, I am just putting it like this because I know it works and I'm short on time
-    currentTime = datetime.datetime.now() # TODO (come back and fix this later to confirm sTime will work)
-    if checkSellShort(context,ema,price) and context.shortBool:
+    """ This function checks if we want to exit a position. Conditions for exit are as follows:
+
+        - Checks to exit short or long position based on criteria defined in those respective functions
+        - If we decide to exit for the first time, start a 60s timer
+        - If fast and slow cross at any time, exit trade
+        - Once 60s timer is up, look to see if we add to position or exit based on the criteria defined in that function
+        - Clean up flags and place order
+    
+    """
+
+    if checkSellShort(context,ema,price) and context.short_flag: # check to exit short
         context.exit_flag=True
-        # context.shortBool=False
-    if checkSellLong(context,ema,price) and context.longBool: # if we enter on either short or long, set flag to true
+
+    if checkSellLong(context,ema,price) and context.long_flag: # check to exit long
         context.exit_flag=True
-        # context.longBool=False
-    if context.exit_flag and context.exitTimerFlag==False:
+
+    if context.exit_flag and context.exitTimerFlag==False: # is this the first time we have decided to exit? if so, start the timer
         context.exitTimerFlag=True
-        context.exitTouchTime = datetime.datetime.now()  # record time which price touches the fast
+        context.exitTouchTime = context.sTime 
+
     if context.exit_flag and checkCross(context, ema): # if we cross within the timer, exit position
         context.saleFlag=True
+        context.exitFlag=False
+        context.exitTimerFlag=False
+        print("selling on the cross")
+
+    # if 60s is up, check to see if we add to position or exit from position
     elif context.exit_flag and context.exitTimerFlag:
-        if np.abs(context.exitTouchTime.timestamp()-currentTime.timestamp())>60 :
+        if np.abs(context.exitTouchTime.timestamp()-context.sTime.timestamp())>=60:
+            print("checking double or nothing")
             checkDoubleOrNothing(context,data, price,ema)
             context.exitTimerFlag=False
+            context.exitFlag=False
 
 def checkCross(context, ema):
     """ This function checks for the fast to cross the slow and generates a buy order accordingly. """
@@ -143,7 +163,6 @@ def checkSellLong(context, ema, price):
     print('checking to sell long \n')
     exit_flag_temp=False # set enter flag to false Automatically
     if (price.ask < ema.fast): # check to if price is less than the fast
-        print("Exit long Position")
         exit_flag_temp = True
     return exit_flag_temp
     
@@ -153,6 +172,5 @@ def checkSellShort(context, ema, price):
     print('checking to sell short \n')
     exit_flag_temp=False # set enter flag to false Automatically
     if (price.ask > ema.fast): # check to if price is greater than the fast
-        print("Exit short Position")
         exit_flag_temp = True
     return exit_flag_temp

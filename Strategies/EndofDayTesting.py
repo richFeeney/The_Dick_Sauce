@@ -31,7 +31,7 @@ from Utils import IndicatorCalculations
 from Utils import Orders
 from Utils import Plotters
 from Utils import Utils
-from UnitTests import testutils
+
 
 def initialize(context):
     """ This function initializes all variables and flags at the beginning of a session"""
@@ -64,7 +64,7 @@ def initialize(context):
     context.exit_order = None
     context.entry_time = None
     context.exit_time = None
-    context.exitTouchTime = datetime.datetime.now()
+    context.exitTouchTime = np.NaN
     context.saleFlag = False
     context.price_1 = show_real_time_price(context.security, 'last_price')
     context.price_n = show_real_time_price(context.security, 'last_price')
@@ -73,23 +73,16 @@ def initialize(context):
     context.log_name = "N/A"
     context.sTime = -9999
     context.positionSize = 0
-    context.macdDelta = 0.1
+    context.macdDelta = 0.05
     context.counter = collections.deque()
     current_date = datetime.date.today()
     current_date_string = str(current_date)
     extension = ".csv"
-    context.file_name = "Log\\BackTest_Buy_Sell_Log_" + extension
-    context.log_name = "Log\\BackTest_Daily_Log_" + extension
+    context.file_name = "Log\\Buy_Sell_Log_" + current_date_string + extension
+    context.log_name = "Log\\Daily_Log_" + current_date_string + extension
     context.sTime = get_datetime('US/Eastern') # Algo start time
-    
-    # open and head the log files
-    
-    with open(context.file_name, 'w', newline='') as csvfile:
-        csvfile.write("""time, fast, fast1, slow, tLine, macd, signalLine, longBool, shorBool, longFlag, shortFlag, enterFlag, entryFlag, exitFlag, askPrice, bidPrice, lastPrice, midPrice, portfolioValue, positionValue, cash \n""")
-    
-    with open(context.log_name, 'w', newline='') as dailyLog:
-        dailyLog.write("""time, fast, fast1, slow, tLine, macd, signalLine, longBool, shorBool, longFlag, shortFlag, enterFlag, entryFlag, exitFlag, exitTimerFlag, saleFlag, exitTouchTime, askPrice, bidPrice, lastPrice, midPrice, open, high, low, close, volume, positionSize, portfolioValue, positionValue, cash \n""")
 
+    
 def handle_data(context, data):
 
     #################### Initialize Variables ####################
@@ -101,45 +94,43 @@ def handle_data(context, data):
     
     #################### Get Current Price ####################
     price = Utils.Price(context,data)
-
+    
     #################### Get Historical Data ####################
     context.hist_1min = request_historical_data(context.security, '1 min', '26000 S')
     # context.hist_5min = request_historical_data(context.security, '5 mins', '31300 S')
-
+    
     #################### Calculate indicators ####################
     ema = IndicatorCalculations.ExpMovAvg(context.hist_1min,price.ask)
         
-    if context.sTime.weekday() <= 4 and 10 <= context.sTime.hour <16:  # Only trades on weekdays
-        if context.sTime.hour<15 or context.sTime.hour==15 and context.sTime.minute<=30:
+    # if context.sTime.weekday() <= 4 and 10 <= context.sTime.hour <16:  # Only trades on weekdays
+    #     if context.sTime.hour<15 or context.sTime.hour==15 and context.sTime.minute<=30:
 
-            #################### Check to Enter ####################
-            if context.positionSize == 0: # if we dont have an order for stock
-                print("checking the cross")
-                EnterExits.checkCross(context,ema) # check if fast/slow are crossing
+    #         #################### Check to Enter ####################
+    #         if context.positionSize == 0: # if we dont have an order for stock
+    #             print("checking the cross")
+    #             EnterExits.checkCross(context,ema) # check if fast/slow are crossing
 
-                print("checking to enter")
-                EnterExits.checkEnter(context, ema,price) # check if we want to enter
+    #             print("checking to enter")
+    #             EnterExits.checkEnter(context, ema,price) # check if we want to enter
 
-            if context.enter_flag: # Place buy order
-                print("Placing Buy Order")
-                Orders.generateBuyOrder(context,data,price,ema)
+    #         if context.enter_flag: # Place buy order
+    #             print("Placing Buy Order")
+    #             Orders.generateBuyOrder(context,data,price,ema)
 
-            #################### Check to Exit ####################
-            if context.positionSize != 0: 
-                print("checking to Exit")
-                EnterExits.checkExit(context, data, ema, price) # check if we want to exit
+    #         #################### Check to Exit ####################
+    #         if context.positionSize != 0: 
+    #             print("checking to Exit")
+    #             EnterExits.checkExit(context, data, ema, price) # check if we want to exit
 
-            if context.saleFlag: 
-                print("Placing sell order")
-                Orders.generateSellOrder(context,data,price,ema) # place sell order
+    #         if context.saleFlag: 
+    #             print("Placing sell order")
+    #             Orders.generateSellOrder(context,data,price,ema) # place sell order
             
-            #################### Log Outputs ####################
-            Utils.dailyLogging(context,data,ema,price)
+    #         #################### Log Outputs ####################
+    #         Utils.dailyLogging(context,data,ema,price)
 
     #################### Closeout Stuff ####################
-    if context.sTime.weekday() <= 4 and context.sTime.hour == 15 and context.sTime.minute == 30 and context.sTime.second >= 0: 
-        if context.positionSize != 0: # exit all positions end of day
-            Orders.generateSellOrder(context,data,price,ema)
+    if context.sTime.weekday() <= 10 and context.sTime.hour <= 25 and context.sTime.minute <= 61 and context.sTime.second >= 0: 
         
         Utils.closeOutTasks(context,data)               
         display_all()

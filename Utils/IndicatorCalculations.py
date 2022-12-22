@@ -159,3 +159,23 @@ def appendCounter(context, N: int = 15):
 def countFlips(context):
     """ This function takes in an input vector and counts the number of times the vector has flipped from true to false"""
     return np.count_nonzero(np.array([context.counter[i]!=context.counter[i+1] for i in range(len(context.counter)-1)]))
+
+def getWeightedAverage(context, n: int = 3, weights: list = [0.1, 0.3, 0.6]):
+    """This function takes an N element vector and a weight vector and applies a weighted average of the vector"""
+    
+    assert len(weights)==n, "N must be length of weights vector"
+    assert np.sum(weights)==1, "Weights must sum to 1"
+
+    context.weightAvg =  np.sum(np.array([(context.tSlope[i]*weights[i]) for i in range(n)]))
+    
+def getTLineSlope(context, ema):
+    """ This function manages the deque for the tLine and tLineSlope"""
+    
+    context.tLine.append(ema.t_line) # append tLine
+    if len(context.tLine)>2: # if tLine is larger than two elements, take the slope and drop the oldest element
+        context.tSlope.append(context.tLine[1]-context.tLine[0])
+        context.tLine.popleft()
+    if len(context.tSlope)>3: # if the tslope is larger than 3 elements, drop the oldest element
+        context.tSlope.popleft()
+    if len(context.tSlope)==3:
+        getWeightedAverage(context)

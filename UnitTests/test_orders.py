@@ -13,7 +13,7 @@ import pytz
 import sys
 import time
 
-sys.path.append(r'D:\algo2\IBridgePy_Win_Anaconda38_64 - Copy')
+sys.path.append(r'C:\algo2')
 from IBridgePy.Trader import Trader
 from trader_factory import build_active_IBridgePy_plus
 from IBridgePy.IbridgepyTools import symbol
