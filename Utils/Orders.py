@@ -45,9 +45,10 @@ def generateSellOrder(context,data,price,ema):
     #         modifyOrder(context, data, price) # modify order to determine whether or not to lower the price
     
     # reset flags
-    Utils.flag_reset(context)
     Utils.doLogging(context,data,ema,price)
+    Utils.flag_reset(context)
     context.shares=0
+    time.sleep(60)
 
 
 
@@ -61,8 +62,14 @@ def generateBuyOrder(context,data,price,ema):
    # calculate number of shares to buy
     if context.shortBool or context.short_flag: 
         shares = -np.round((0.2*context.portfolio.portfolio_value/price.mid))
+        if context.portfolio.cash<np.abs(shares)*price.mid:
+            print("not enough cash to go fully into position")
+            shares = -np.round((0.2*context.portfolio.cash/price.mid))
     else:
         shares = np.round((0.2*context.portfolio.portfolio_value/price.mid))
+        if context.portfolio.cash<np.abs(shares)*price.mid:
+            print("not enough cash to go fully into position")
+            shares = np.round((0.2*context.portfolio.cash/price.mid))
     
     # record number of shares in position
     context.shares = context.shares+shares 
@@ -84,9 +91,10 @@ def generateBuyOrder(context,data,price,ema):
         context.long_flag=True
     
     # Reset flags and update log
+    Utils.dailyLogging(context,data,ema,price)
     context.entry_flag =  True           
     context.longBool =    False
     context.shortBool =   False
     context.enter_flag =  False
     context.double_flag =  False 
-    Utils.doLogging(context,data,ema,price)
+    time.sleep(60)

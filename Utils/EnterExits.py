@@ -135,7 +135,6 @@ def checkExit(context, data, ema, price):
 
     # if 60s is up, check to see if we add to position or exit from position
     elif context.exit_flag and context.exitTimerFlag:
-        print("delta Time is: "+str(np.abs(context.exitTouchTime.timestamp()-context.sTime.timestamp())))
         if np.abs(context.exitTouchTime.timestamp()-context.sTime.timestamp())>=60:
             print("checking double or nothing")
             checkDoubleOrNothing(context,data, price,ema)

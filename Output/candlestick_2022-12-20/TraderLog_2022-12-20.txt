@@ -1,0 +1,76 @@
+2022-12-20 07:48:12.095649-05:00: Try brokerClient IBinsync port=7496
+2022-12-20 07:48:14.141007-05:00: Hint 1: Enable API.
+2022-12-20 07:48:14.141007-05:00: Hint 2: Maybe the port number does not match.
+2022-12-20 07:48:14.142022-05:00: Try brokerClient IBinsync port=7497
+2022-12-20 07:48:16.207597-05:00: Hint 1: Enable API.
+2022-12-20 07:48:16.210547-05:00: Hint 2: Maybe the port number does not match.
+2022-12-20 07:48:16.212568-05:00: Try brokerClient IBinsync port=4001
+2022-12-20 07:48:18.283433-05:00: Hint 1: Enable API.
+2022-12-20 07:48:18.283433-05:00: Hint 2: Maybe the port number does not match.
+2022-12-20 07:48:18.284429-05:00: Try brokerClient IBinsync port=4002
+2022-12-20 07:48:20.332704-05:00: Hint 1: Enable API.
+2022-12-20 07:48:20.333692-05:00: Hint 2: Maybe the port number does not match.
+2022-12-20 07:48:20.340674-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-12-20 07:48:20.847601-05:00: broker_client_factory.CallBacks::error: errorId=-1 errorCode=504 errorMessage=Not connected
+2022-12-20 07:48:20.847601-05:00: broker_client_factory.CallBacks::_print_version:IBridgePy version= 18.1.7
+2022-12-20 07:49:18.159137-05:00: Try brokerClient IB port=7496
+2022-12-20 07:49:20.225363-05:00: Hint 1: Enable API.
+2022-12-20 07:49:20.225363-05:00: Hint 2: Maybe the port number does not match.
+2022-12-20 07:49:20.226361-05:00: Try brokerClient IB port=7497
+2022-12-20 07:49:22.265146-05:00: Hint 1: Enable API.
+2022-12-20 07:49:22.266145-05:00: Hint 2: Maybe the port number does not match.
+2022-12-20 07:49:22.266145-05:00: Try brokerClient IB port=4001
+2022-12-20 07:49:24.295451-05:00: Hint 1: Enable API.
+2022-12-20 07:49:24.296448-05:00: Hint 2: Maybe the port number does not match.
+2022-12-20 07:49:24.299441-05:00: Try brokerClient IB port=4002
+2022-12-20 07:49:26.347286-05:00: Hint 1: Enable API.
+2022-12-20 07:49:26.347286-05:00: Hint 2: Maybe the port number does not match.
+2022-12-20 07:49:26.354440-05:00: broker_client_factory.CallBacks::error: errorId=-1 errorCode=504 errorMessage=Not connected
+2022-12-20 07:49:26.355473-05:00: broker_client_factory.CallBacks::_print_version:IBridgePy version= 18.1.7
+2022-12-20 07:50:08.746820-05:00: Try brokerClient IB port=7496
+2022-12-20 07:50:08.789126-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-12-20 07:50:08.792146-05:00: Connected to IB is successful using port=7496
+2022-12-20 07:50:08.796107-05:00: IBridgePy version 18.1.7
+2022-12-20 07:50:08.799099-05:00: fileName = updatedAlgoCommon.py
+2022-12-20 07:50:09.366582-05:00: ####    Starting to initialize trader    ####
+2022-12-20 07:50:09.367615-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-12-20 07:50:09.367615-05:00: CASH=352577.34
+2022-12-20 07:50:09.367615-05:00: portfolio_value=294570.35
+2022-12-20 07:50:09.368577-05:00: positions_value=58449.34
+2022-12-20 07:50:09.368577-05:00: ##    POSITIONS DU2628075   ##
+2022-12-20 07:50:09.369574-05:00: Symbol Amount Cost_basis
+2022-12-20 07:50:09.369574-05:00: STK,,,SPY,USD -154 382.3946195
+2022-12-20 07:50:09.369574-05:00: ##    NO any order    ##
+2022-12-20 07:50:09.370571-05:00: ####    Initialize trader COMPLETED    ####
+2022-12-20 08:11:56.493040-05:00: Try brokerClient IB port=7496
+2022-12-20 08:11:56.505390-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-12-20 08:11:56.508340-05:00: Connected to IB is successful using port=7496
+2022-12-20 08:11:56.512329-05:00: IBridgePy version 18.1.7
+2022-12-20 08:11:56.515321-05:00: fileName = updatedAlgoCommon.py
+2022-12-20 08:11:57.074826-05:00: ####    Starting to initialize trader    ####
+2022-12-20 08:11:57.075851-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-12-20 08:11:57.078814-05:00: CASH=352577.34
+2022-12-20 08:11:57.078814-05:00: portfolio_value=294641.37
+2022-12-20 08:11:57.078814-05:00: positions_value=58378.32
+2022-12-20 08:11:57.079812-05:00: ##    POSITIONS DU2628075   ##
+2022-12-20 08:11:57.079812-05:00: Symbol Amount Cost_basis
+2022-12-20 08:11:57.079812-05:00: STK,,,SPY,USD -154 382.3946195
+2022-12-20 08:11:57.080809-05:00: ##    NO any order    ##
+2022-12-20 08:11:57.080809-05:00: ####    Initialize trader COMPLETED    ####
+2022-12-20 08:13:46.450470-05:00: Try brokerClient IB port=7496
+2022-12-20 08:13:46.462737-05:00: port=7496 is correct and set port to userConfig.brokerClientConfig.IB_CLIENT
+2022-12-20 08:13:46.465730-05:00: Connected to IB is successful using port=7496
+2022-12-20 08:13:46.470717-05:00: IBridgePy version 18.1.7
+2022-12-20 08:13:46.473738-05:00: fileName = updatedAlgoCommon.py
+2022-12-20 08:13:47.021245-05:00: ####    Starting to initialize trader    ####
+2022-12-20 08:13:47.022243-05:00: ##    ACCOUNT Balance  DU2628075  ##
+2022-12-20 08:13:47.024266-05:00: CASH=352577.34
+2022-12-20 08:13:47.025263-05:00: portfolio_value=294641.37
+2022-12-20 08:13:47.025263-05:00: positions_value=58378.32
+2022-12-20 08:13:47.026232-05:00: ##    POSITIONS DU2628075   ##
+2022-12-20 08:13:47.026232-05:00: Symbol Amount Cost_basis
+2022-12-20 08:13:47.026232-05:00: STK,,,SPY,USD -154 382.3946195
+2022-12-20 08:13:47.027230-05:00: ##    Order Status DU2628075   ##
+2022-12-20 08:13:47.027230-05:00: {ibpyOrderId=ib211459 status=PreSubmitted order={account=DU2628075 action=BUY orderType=LMT amount=154 tif=DAY orderRef= limitPrice=379.06} contract={STK,,SMART,SPY,USD}}
+2022-12-20 08:13:47.027230-05:00: ##    END    ##
+2022-12-20 08:13:47.028226-05:00: ####    Initialize trader COMPLETED    ####

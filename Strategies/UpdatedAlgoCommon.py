@@ -73,7 +73,7 @@ def initialize(context):
     context.log_name = "N/A"
     context.sTime = -9999
     context.positionSize = 0
-    context.macdDelta = 0.1
+    context.macdDelta = 0.05
     context.counter = collections.deque()
     current_date = datetime.date.today()
     current_date_string = str(current_date)
@@ -84,6 +84,7 @@ def initialize(context):
     context.weightAvg = 0.
     context.tSlope = collections.deque()
     context.tLine = collections.deque()
+    context.tempBool = False # temporary flag to sell stock from last night
     context.slopeBypass = 1 # slope needed to bypass macdDelta check (dollars/min)
     # open and head the log files
     
@@ -94,7 +95,7 @@ def initialize(context):
         dailyLog.write("""time, fast, fast1, slow, tLine, macd, signalLine, longBool, shortBool, longFlag, shortFlag, enterFlag, entryFlag, exitFlag, askPrice, bidPrice, lastPrice, midPrice, portfolioValue, positionValue, cash \n""")
 
 def handle_data(context, data):
-
+    
     #################### Initialize Variables ####################
     context.sTime = get_datetime('US/Eastern') # Algo start time
     context.positionSize = count_positions(context.security)
@@ -111,8 +112,13 @@ def handle_data(context, data):
     
     #################### Calculate indicators ####################
     ema = IndicatorCalculations.ExpMovAvg(context.hist_1min,price.ask)
-    IndicatorCalculations.getTLineSlope(context, ema) # get slope of tline for enter exits TODO fix structure of code
-    
+    # IndicatorCalculations.getTLineSlope(context, ema) # get slope of tline for enter exits TODO fix structure of code
+   
+    # if context.sTime.weekday() <= 4 and 8 <= context.sTime.hour <24 and context.tempBool==False:  # Only trades on weekdays
+    #     if context.positionSize != 0: # exit all positions end of day
+    #         Orders.generateSellOrder(context,data,price,ema)
+    #         context.tempBool=True
+            
     if context.sTime.weekday() <= 4 and 10 <= context.sTime.hour <16:  # Only trades on weekdays
         if context.sTime.hour<15 or context.sTime.hour==15 and context.sTime.minute<=30:
             

@@ -73,7 +73,7 @@ def initialize(context):
     context.log_name = "N/A"
     context.sTime = -9999
     context.positionSize = 0
-    context.macdDelta = 0.5
+    context.macdDelta = 0.1
     context.counter = collections.deque()
     current_date = datetime.date.today()
     current_date_string = str(current_date)
@@ -141,9 +141,9 @@ def handle_data(context, data):
         if context.positionSize != 0: # exit all positions end of day
             Orders.generateSellOrder(context,data,price,ema)
         
-        # Utils.closeOutTasks(context,data)               
-        # display_all()
-        # sys.exit()
+        Utils.closeOutTasks(context,data)               
+        display_all()
+        sys.exit()
     
        
         
