@@ -1,2 +1,0 @@
-time, fast, fast1, slow, tLine, macd, signalLine, longBool, shorBool, longFlag, shortFlag, enterFlag, entryFlag, exitFlag, askPrice, bidPrice, lastPrice, midPrice, portfolioValue, positionValue, cash 
-1670511600.0, 395.43, 395.31, 394.37, 395.68, 0.58, 0.46, False, False, True, False, False, True, False, 396.19, 396.17, 396.18, 396.18, 299002.89, 60606.36, 359449.41
